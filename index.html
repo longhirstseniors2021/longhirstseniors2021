@@ -1,0 +1,33 @@
+<html>
+<style>
+body {
+  background: DodgerBlue;
+  font-family: arial, sans-serif;
+  font-size:20px;
+}
+optgroup { font-size:20px; }
+</style>
+<h1>Seniors Winter Golf</h1>
+<br><br>
+Select an option (opens in a new tab).
+<br><br>
+<select style="font-size:20px;" id="mySelect" onchange="myFunction()">
+  <option value="Make your selection from below" disabled>Make your selection from below</option>     
+  <option value="Score Entry">Score Entry</option>
+  <option value="Tony Smith">Tony Smith</option>
+  <option value="Pete Holleran">Pete Holleran</option>
+  <option value="Bryan Maddison">Bryan Maddison</option>
+</select>
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    if (x == "Bryan Maddison") {
+        window.location.href = "https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQjJk02joq2wEEC0om3OGx0iVwoVXmwCLaJYNav_mpsVqdKVd-QDCv2qY0c8WLUlF1ZuZG7ABnm3MjQ/pubhtml?gid=1064545502&single=true"
+       
+       // window.open("https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vQjJk02joq2wEEC0om3OGx0iVwoVXmwCLaJYNav_mpsVqdKVd-QDCv2qY0c8WLUlF1ZuZG7ABnm3MjQ/pubhtml?gid=1064545502&single=true");
+//alert("You selected: " + x);
+}}
+</script>
+</html>
+
+
