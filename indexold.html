@@ -1,0 +1,168 @@
+<html>
+<style>
+body {
+  background: DodgerBlue;
+  font-family: arial, sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+}
+ 
+.link-button-wrapper {
+    width: 500px;
+    height: 100px;
+    border-radius: 4px;
+    background-color: #097BC0;
+    box-shadow: 1px 1px 1px 1px cyan;
+    display: block;
+    border:1px solid #094BC0;
+}
+.link-button-wrapper > a {
+    display: inline-table;
+    cursor: pointer;
+    text-decoration: none;
+    height: 100%;
+    width:100%;
+}
+.link-button-wrapper > a > p {
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    color: #f7f8f8;
+    font-size: 30px;
+    font-family: arial, sans-serif;
+    text-align: center;
+} 
+
+select {
+width: 500px;
+height: 50px;
+position: relative;
+box-shadow: 1px 1px 1px 1px cyan;
+font-size:30px;
+color: #ffffff;
+background-color: #097BC0
+}
+   
+.atitle {
+  font-size:60px;
+}
+
+</style>
+<div class="atitle">
+Seniors Winter Golf
+</div> 
+  
+<br>
+use the button below to input a score
+<br><br>
+<div class="link-button-wrapper">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSewGKlHDbiFDkx9mP9NogR29mC8hkFKkKZH2-6Lr-o2kSjjxw/viewform">
+        <p>Go to Score Entry</p>
+    </a>
+</div> 
+<br><br>
+or ... Select an option from the drop-down list. 
+<br><br>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="Make your selection" selected disabled> - Make your selection - </option>         
+  <option value="Score Entry">Score Entry</option>
+  <option value="Twos">Twos</option>
+  <option value="Monday latest results">Monday latest results</option>
+  <option value="Dawson hole stats">Dawson hole stats</option>
+  <option value="Lakes hole stats">Lakes hole stats</option>
+  <option value="------------- players listing -------------" disabled>------------- players listing -------------</option>
+   <option value="Dale Aitkenhead" disabled>Dale Aitkenhead</option>
+  <option value="Keith Belshaw">Keith Belshaw</option>
+  <option value="Dave Cave">Dave Cave</option>
+  <option value="Gary Cowman">Gary Cowman</option>
+  <option value="Andy Davison">Andy Davison</option>
+  <option value="Peter Holleran">Peter Holleran</option>
+  <option value="Bryan Maddison">Bryan Maddison</option>
+  <option value="Brian Simpson">Brian Simpson</option>
+  <option value="Tony Smith">Tony Smith</option>
+</select>
+<script>
+    
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  window.location=window.location;
+    
+  if (x == "Dave Cave") {
+      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=328022563&single=true";
+  }
+  if (x == "Gary Cowman") {
+      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=2080501982&single=true";
+  }
+  if (x == "Andy Davison") {
+      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1172753139&single=true";
+  }
+  if (x == "Peter Holleran") {
+      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=93222515&single=true";
+  } 
+  if (x == "Bryan Maddison") {
+      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1064545502&single=true";
+  }
+  if (x == "Brian Simpson") {
+      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=888339019&single=true";
+  } 
+  if (x == "Tony Smith") {
+      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=641123319&single=true";
+  }
+  
+  if (x == "Keith Belshaw") {
+      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=929733105&single=true";
+  }
+  
+  
+  
+  if (x == "Score Entry") {
+      window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSewGKlHDbiFDkx9mP9NogR29mC8hkFKkKZH2-6Lr-o2kSjjxw/viewform";
+  }
+  
+ if (x == "Twos") {
+      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1270023006&single=true";
+ }
+  
+ if (x == "Monday latest results") { 
+    window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=827505463&single=true";
+ }  
+  
+  if (x == "Dawson hole stats") { 
+    window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1828713251&single=true";
+  }
+  
+  if (x == "Lakes hole stats") { 
+    window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=706715244&single=true";
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   
+}  
+
+window.onunload = function(){};
+
+if (window.history.state != null && window.history.state.hasOwnProperty('historic')) {
+    if (window.history.state.historic == true) {
+        document.body.style.display = 'none';
+        window.history.replaceState({historic: false}, '');
+        window.location.reload();
+    } else {
+        window.history.replaceState({historic  : true}, '');
+    }
+} else {
+    window.history.replaceState({historic  : true}, '');
+}
+  </script>
+</html>
+
+
