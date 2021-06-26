@@ -1,9 +1,10 @@
 
 
 
-<html>
-    
-   <style>
+
+<!DOCTYPE html>
+<html lang="en">
+<style>
 body {
   background: DodgerBlue;
   font-family: arial, sans-serif;
@@ -53,8 +54,10 @@ background-color: #097BC0
 
 </style> 
     
-    
-   <head>
+
+
+
+<body>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name="description" content="Longhirst seniors" />
@@ -69,16 +72,16 @@ background-color: #097BC0
       <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
       <!-- Core theme CSS (includes Bootstrap)-->
       <link href="css/styles.css" rel="stylesheet" />
-   </head>
+
    
    
    
-   <body>
+
 
  
       <!-- hcp Section-->
-      <section class="page-section bg-primary text-white mb-0" id="hcp">
-      <div class="container">
+<section class="page-section bg-primary text-white mb-0" id="hcp">
+<div class="container">
          <!-- hcp Section Heading-->
          
 
@@ -87,7 +90,7 @@ Seniors Winter Golf
 </div> 
   
 <br>
-Use the button below to input a score
+use the button below to input a score
 <br><br>
 <div class="link-button-wrapper">
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSewGKlHDbiFDkx9mP9NogR29mC8hkFKkKZH2-6Lr-o2kSjjxw/viewform">
@@ -99,14 +102,14 @@ or ... Select an option from the drop-down list.
 <br><br>
 
 <select id="mySelect" onchange="myFunction()">
-  <option value="Make your selection" selected disabled> - Make your selection - </option>         
+  <option value="Make your selection"> - Make your selection - </option>         
   <option value="Score Entry">Score Entry</option>
   <option value="Twos">Twos</option>
   <option value="Monday latest results">Monday latest results</option>
   <option value="Dawson hole stats">Dawson hole stats</option>
   <option value="Lakes hole stats">Lakes hole stats</option>
-  <option value="------------- players listing -------------" disabled>------------- players listing -------------</option>
-   <option value="Dale Aitkenhead" disabled>Dale Aitkenhead</option>
+  <option value="------------- players listing -------------" >------------- players listing -------------</option>
+   <option value="Dale Aitkenhead">Dale Aitkenhead</option>
   <option value="Keith Belshaw">Keith Belshaw</option>
   <option value="Dave Cave">Dave Cave</option>
   <option value="Gary Cowman">Gary Cowman</option>
@@ -126,7 +129,7 @@ function myFunction() {
   window.location=window.location;
     
   if (x == "Dave Cave") {
-      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=328022563&single=true";
+      window.location.href = "https://docs.google.c/spreadsheet/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=328022563&single=true";
   }
   if (x == "Gary Cowman") {
       window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=2080501982&single=true";
@@ -199,16 +202,13 @@ if (window.history.state != null && window.history.state.hasOwnProperty('histori
 } else {
     window.history.replaceState({historic  : true}, '');
 }
-  </script>
+</script>
+</div>
 
+</section>
 
-  </section>
-      </div>
             
-   </body>
-   
-   
-   
+</body>
    
    
 </html>
