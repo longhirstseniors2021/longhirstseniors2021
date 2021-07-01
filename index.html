@@ -2,33 +2,27 @@
 
 <!DOCTYPE html>
 <html lang="en">
- 
-<style>
-body {
-  background: DodgerBlue;
-  font-family: arial, sans-serif;
-  font-size: 30px;
-  color: #ffffff;
-}
-
-
-select {
-width: 350px;
-height: 50px;
-position: relative;
-#box-shadow: 1px 1px 1px 1px cyan;
-font-size:30px;
-color: #ffffff;
-background-color: #097BC0
-}
-   
-.atitle {
-  font-size:60px;
-}
-
-</style>    
-
-<head>
+   <style>
+      body {
+      background: DodgerBlue;
+      font-family: arial, sans-serif;
+      font-size: 30px;
+      color: #ffffff;
+      }
+      select {
+      width: 450px;
+      height: 50px;
+      position: relative;
+      #box-shadow: 1px 1px 1px 1px cyan;
+      font-size:30px;
+      color: #ffffff;
+      background-color: #097BC0
+      }
+      .atitle {
+      font-size:60px;
+      }
+   </style>
+   <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
       <meta name="description" content="Longhirst seniors" />
@@ -39,138 +33,129 @@ background-color: #097BC0
       <!-- Google fonts-->
       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-      <!-- Core theme CSS (includes Bootstrap)-->
-      <link href="styles.css" rel="stylesheet" />
- </head>
-
-<body>
+      <!-- Core theme CSS (includes Bootstrap)
+         <link href="styles.css" rel="stylesheet" />
+         -->
+   </head>
+   <body>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name="description" content="Longhirst seniors" />
       <meta name="author" content="Bryan M" />
       <title>Longhirst seniors</title>
-      <!-- hcp Section-->
       <section class="page-section bg-primary text-white mb-0" id="hcp">
-         <div class="container">    
+         <div class="container">
             <div class="atitle">
-             Seniors
-             <img src="fallovergolfer.gif" alt="Golfer" width="60" height="80">
-             <br>
+               Seniors
+               <img src="fallovergolfer.gif" alt="Golfer" width="60" height="80">
+               <br>
                Winter Golf
-            </div>  
-            <br><br><br>
-           
-
-<select id="mySelect" onchange="myFunction()">
-  <option value="Select an option from the drop-down list here" hidden>Select an option from the drop-down list here</option>         
-  <option value="Score Entry">Score Entry</option>
-  <option value="Sorted results">Sorted results</option>
-  <option value="Latest results">Latest results</option>
-  <option value="Dawson hole stats">Dawson hole stats</option>
-  <option value="Lakes hole stats">Lakes hole stats</option>
-  <option value="Twos">Twos</option>
-  <option value="Handicap adjustment">Handicap adjustment</option>
-  <option value="Handicap adjustment list">Handicap adjustment list</option>
-  <option value="Dale Aitkenhead">Dale Aitkenhead</option>
-  <option value="Keith Belshaw">Keith Belshaw</option>
-  <option value="Dave Cave">Dave Cave</option>
-  <option value="Gary Cowman">Gary Cowman</option>
-  <option value="Andy Davison">Andy Davison</option>
-  <option value="Peter Holleran">Peter Holleran</option>
-  <option value="Bryan Maddison">Bryan Maddison</option>
-  <option value="Brian Simpson">Brian Simpson</option>
-  <option value="Tony Smith">Tony Smith</option>
-</select>
-
-<br><br><br><br>
-   
-<br><br><br><br>      
-          
-          
-<script>
-    
-function myFunction() {
-  var x = document.getElementById("mySelect").value;
-  window.location=window.location;
-    
-  if (x == "Dave Cave") {
-      window.location.href = "https://docs.google.c/spreadsheet/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=328022563&single=true";
-  }
-  if (x == "Gary Cowman") {
-      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=2080501982&single=true";
-  }
-  if (x == "Andy Davison") {
-      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1172753139&single=true";
-  }
-  if (x == "Peter Holleran") {
-      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=93222515&single=true";
-  } 
-  if (x == "Bryan Maddison") {
-      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1064545502&single=true";
-  }
-  if (x == "Brian Simpson") {
-      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=888339019&single=true";
-  } 
-  if (x == "Tony Smith") {
-      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=641123319&single=true";
-  }
-  
-  if (x == "Keith Belshaw") {
-      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=929733105&single=true";
-  } 
-  
-  if (x == "Score Entry") {
-      window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSewGKlHDbiFDkx9mP9NogR29mC8hkFKkKZH2-6Lr-o2kSjjxw/viewform";
-  }
-  
- if (x == "Twos") {
-      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1270023006&single=true";
- }
-  
- if (x == "Latest results") { 
-    window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=827505463&single=true";
- }  
-  
-  if (x == "Dawson hole stats") { 
-    window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1828713251&single=true";
-  }
-  
-  if (x == "Lakes hole stats") { 
-    window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=706715244&single=true";
-  }
-   
-  if (x == "Handicap adjustment") { 
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdb4rLqKGBTkizZb1UEXAkCulhG_IoEOAnZ5SBwxwudLYkOgQ/viewform";
-  }
- 
-  if (x == "Handicap adjustment list") { 
-    window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=107376536&single=true"
-  }
- 
-  if (x == "Sorted results") { 
-    window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1455933323&single=true"
-  }
- 
-}  
-
-window.onunload = function(){};
-
-if (window.history.state != null && window.history.state.hasOwnProperty('historic')) {
-    if (window.history.state.historic == true) {
-        document.body.style.display = 'none';
-        window.history.replaceState({historic: false}, '');
-        window.location.reload();
-    } else {
-        window.history.replaceState({historic  : true}, '');
-    }
-} else {
-    window.history.replaceState({historic  : true}, '');
-}
-</script>
+            </div>
+            <br><br>
+            <select id="mySelect" onchange="myFunction()">
+               <option value="Select an option from here" hidden>Select an option from here</option>
+               <option value="Score Entry">Score Entry</option>
+               <option value="Sorted results">Sorted results</option>
+               <option value="Latest results">Latest results</option>
+               <option value="Dawson hole stats">Dawson hole stats</option>
+               <option value="Lakes hole stats">Lakes hole stats</option>
+               <option value="Twos">Twos</option>
+               <option value="Handicap adjustment">Handicap adjustment</option>
+               <option value="Handicap adjustment list">Handicap adjustment list</option>
+               <option value="Dale Aitkenhead">Dale Aitkenhead</option>
+               <option value="Keith Belshaw">Keith Belshaw</option>
+               <option value="Dave Cave">Dave Cave</option>
+               <option value="Gary Cowman">Gary Cowman</option>
+               <option value="Andy Davison">Andy Davison</option>
+               <option value="Peter Holleran">Peter Holleran</option>
+               <option value="Bryan Maddison">Bryan Maddison</option>
+               <option value="Brian Simpson">Brian Simpson</option>
+               <option value="Tony Smith">Tony Smith</option>
+            </select>
+            <br><br><br><br>
+            <br><br><br><br>      
+            <script>
+               function myFunction() {
+                 var x = document.getElementById("mySelect").value;
+                 window.location=window.location;
+                   
+                 if (x == "Dave Cave") {
+                     window.location.href = "https://docs.google.c/spreadsheet/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=328022563&single=true";
+                 }
+                 if (x == "Gary Cowman") {
+                     window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=2080501982&single=true";
+                 }
+                 if (x == "Andy Davison") {
+                     window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1172753139&single=true";
+                 }
+                 if (x == "Peter Holleran") {
+                     window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=93222515&single=true";
+                 } 
+                 if (x == "Bryan Maddison") {
+                     window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1064545502&single=true";
+                 }
+                 if (x == "Brian Simpson") {
+                     window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=888339019&single=true";
+                 } 
+                 if (x == "Tony Smith") {
+                     window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=641123319&single=true";
+                 }
+                 
+                 if (x == "Keith Belshaw") {
+                     window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=929733105&single=true";
+                 } 
+                 
+                 if (x == "Score Entry") {
+                     window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSewGKlHDbiFDkx9mP9NogR29mC8hkFKkKZH2-6Lr-o2kSjjxw/viewform";
+                 }
+                 
+                if (x == "Twos") {
+                     window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1270023006&single=true";
+                }
+                 
+                if (x == "Latest results") { 
+                   window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=827505463&single=true";
+                }  
+                 
+                 if (x == "Dawson hole stats") { 
+                   window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1828713251&single=true";
+                 }
+                 
+                 if (x == "Lakes hole stats") { 
+                   window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=706715244&single=true";
+                 }
+                  
+                 if (x == "Handicap adjustment") { 
+                   window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdb4rLqKGBTkizZb1UEXAkCulhG_IoEOAnZ5SBwxwudLYkOgQ/viewform";
+                 }
                 
+                 if (x == "Handicap adjustment list") { 
+                   window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=107376536&single=true"
+                 }
+                
+                 if (x == "Sorted results") { 
+                   window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1455933323&single=true"
+                 }
+                
+               }  
+               
+               window.onunload = function(){};
+               
+               if (window.history.state != null && window.history.state.hasOwnProperty('historic')) {
+                   if (window.history.state.historic == true) {
+                       document.body.style.display = 'none';
+                       window.history.replaceState({historic: false}, '');
+                       window.location.reload();
+                   } else {
+                       window.history.replaceState({historic  : true}, '');
+                   }
+               } else {
+                   window.history.replaceState({historic  : true}, '');
+               }
+            </script>
          </div>
-      </section>            
-</body>  
+      </section>
+   </body>
 </html>
 
 
