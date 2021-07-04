@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
    <style>
@@ -21,6 +22,7 @@
       .atitle {
       font-size:60px;
       }
+      
    </style>
    <head>
       <meta charset="utf-8" />
@@ -54,13 +56,16 @@
             <br><br>
             <select id="mySelect" onchange="myFunction()">
                <option value="Select an option here" hidden>Select an option here</option>
+               <option value="" style="color:cyan;">Input screens</option>
                <option value="Score Entry">Score Entry</option>
-               <option value="Sorted results">Sorted results</option>
+               <option value="" style="color:cyan;">Information pages</option>
+               <option value="All results">All results</option>
                <option value="Latest results">Latest results</option>
                <option value="Dawson hole stats">Dawson hole stats</option>
                <option value="Lakes hole stats">Lakes hole stats</option>
                <option value="Twos">Twos</option>
                <option value="Handicap adjustments">Handicap adjustments</option>
+               <option value="" style="color:cyan;">Member listings</option>
                <option value="Dale Aitkenhead">Dale Aitkenhead</option>
                <option value="Keith Belshaw">Keith Belshaw</option>
                <option value="Dave Cave">Dave Cave</option>
@@ -75,7 +80,9 @@
             <br><br><br><br>
             <br><br><br><br>      
             <script>
-               function myFunction() {
+                
+            function myFunction() {
+                  
                  var x = document.getElementById("mySelect").value;
                  window.location=window.location;
                  
@@ -113,6 +120,7 @@
                      window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=2038769766&single=true";
                  }
                  
+                 
                  if (x == "Score Entry") {
                      window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSewGKlHDbiFDkx9mP9NogR29mC8hkFKkKZH2-6Lr-o2kSjjxw/viewform";
                  }
@@ -137,11 +145,14 @@
                    window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=107376536&single=true";
                  }
                 
-                 if (x == "Sorted results") { 
+                 if (x == "All results") { 
                    window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR6ipSKHnZKS6vCzEjhiaZJVW4FTLnhkwIHya-fQB45w0vV_NAsp8JjGiB6XRCs-hGL0rCv1MY13RNX/pubhtml?gid=1455933323&single=true";
                  }
+             
                 
                }  
+               
+               
                
                window.onunload = function(){};
                
