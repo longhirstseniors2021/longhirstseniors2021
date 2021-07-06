@@ -54,8 +54,8 @@
                Winter Golf
             </div>
             <br><br>
-            <select id="mySelect" onchange="myFunction()">
-               <option value="Select an option here" hidden>Select an option here</option>
+            <select id="mySelect" onchange="myFunction();" onfocus="this.selectedIndex = -1;">
+               <option disabled selected value style="display:none;">Select an option here</option>
                <option value="" style="color:cyan;">Input screens</option>
                <option value="Score Entry">Score Entry</option>
                <option value="" style="color:cyan;">Information pages</option>
