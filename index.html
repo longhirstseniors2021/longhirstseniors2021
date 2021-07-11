@@ -55,10 +55,30 @@
             </div>
             <br><br>
             
+            <script>
             
+             $(document).ready(function () {
+             $('select').each(function () {
+             var select = $(this);
+             var selectedValue = select.find('option[selected]').val();
+
+             if (selectedValue) {
+                 select.val(selectedValue);
+             }
+            
+            </script>
+            
+            
+             <select id="mySelect" onchange="myFunction();">
+             <option disabled selected valuestyle="display:none;" >Select an option here</option>
+            
+            
+            
+            
+            <!--
             <select id="mySelect" onchange="myFunction();" onfocus="this.selectedIndex = -1;">
                <option disabled selected valuestyle="display:none;" >Select an option here</option>
-             
+             -->
             
                 <!--            
                <option disabled value="" style="color:cyan;">Input screens</option>
