@@ -56,15 +56,14 @@
             <br><br>
             
             <script>
-            
-             $(document).ready(function () {
-             $('select').each(function () {
-             var select = $(this);
-             var selectedValue = select.find('option[selected]').val();
+           
+let selects = document.getElementsByTagName('select');
+for (let i = 0; i < selects.length; ++i) {
+let currentSelect = selects[i];
+let selectedOption = currentSelect.querySelector('option[selected]');
+if (SelectedOption) currentSelect.value = selectedOption.value;
+}
 
-             if (selectedValue) {
-                 select.val(selectedValue);
-             }
             
             </script>
             
