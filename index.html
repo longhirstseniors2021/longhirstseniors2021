@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
    <style>
@@ -22,7 +19,7 @@
       .atitle {
       font-size:60px;
       }
-       .asubtitle {
+      .asubtitle {
       font-size:12px;
       }
    </style>
@@ -56,324 +53,573 @@
                Winter Golf
                <br>
                <div class="asubtitle">
-               (1st November 2021 to 28th March 2022)
-               </div>  
+                  (1st November 2021 to 28th March 2022)
+               </div>
             </div>
             <br><br>
-            
             <script>
-           
-let selects = document.getElementsByTagName('select');
-for (let i = 0; i < selects.length; ++i) {
-let currentSelect = selects[i];
-let selectedOption = currentSelect.querySelector('option[selected]');
-if (SelectedOption) currentSelect.value = selectedOption.value;
-}
-
-            
+               let selects = document.getElementsByTagName('select');
+               for (let i = 0; i < selects.length; ++i) {
+               let currentSelect = selects[i];
+               let selectedOption = currentSelect.querySelector('option[selected]');
+               if (SelectedOption) currentSelect.value = selectedOption.value;
+               }
             </script>
-            
-            
-             <select id="mySelect" onchange="myFunction();">
-             <option disabled selected valuestyle="display:none;" >Select an option here</option>
-            
-            
-            
-            
-            <!--
-            <select id="mySelect" onchange="myFunction();" onfocus="this.selectedIndex = -1;">
+            <select id="mySelect" onchange="myFunction();">
                <option disabled selected valuestyle="display:none;" >Select an option here</option>
-             -->
-            
-                <!--            
-               <option disabled value="" style="color:cyan;">Input screens</option>
-               -->
+               <!--
+                  <select id="mySelect" onchange="myFunction();" onfocus="this.selectedIndex = -1;">
+                     <option disabled selected valuestyle="display:none;" >Select an option here</option>
+                   -->
+               <!--            
+                  <option disabled value="" style="color:cyan;">Input screens</option>
+                  -->
                <option value="score entry">Score Entry</option>
                <!--
-               <option disabled value="" style="color:cyan;">Information pages</option>
-               -->
+                  <option disabled value="" style="color:cyan;">Information pages</option>
+                  -->
                <option value="sorted results">All results</option>
                <option value="latest results">Latest results</option>
                <option value="dawson hole stats">Dawson hole stats</option>
                <option value="lakes hole stats">Lakes hole stats</option>
-               <option value="finishes">Top 5 finishes</option> 
+               <option value="finishes">Top 5 finishes</option>
                <option value="dawson">Dawson card</option>
-               <option value="lakes">Lakes card</option>    
+               <option value="lakes">Lakes card</option>
                <option value="twos">Twos</option>
                <option value="hcp adjustments">Handicap adjustments</option>
-                
                <option value="legend">Legend</option>
                <!--
-               <option disabled value="" style="color:cyan;">Member listings</option>
-               -->
+                  <option disabled value="" style="color:cyan;">Member listings</option>
+                  -->
                <option value="Graham Airey">Graham Airey</option>
-<option value="Dale Aitkenhead">Dale Aitkenhead</option>
-<option value="Keith Belshaw">Keith Belshaw</option>
-<option value="Stewart Brodie">Stewart Brodie</option>                
-<option value="Dave Cave">Dave Cave</option>
-<option value="Craig Caesar">Craig Caesar</option>
-<option value="Clive Caisley">Clive Caisley</option>
-<option value="Ken Clark">Ken Clark</option>
-<option value="Robert Connelly">Robert Connelly</option>
-<option value="Jed Cornhill">Jed Cornhill</option>
-<option value="Alexander Coupland">Alexander Coupland</option>
-<option value="Gary Cowman">Gary Cowman</option>
-<option value="Andy Davison">Andy Davison</option>
-<option value="John Dean">John Dean</option>
-<option value="William French">William French</option>
-<option value="David Gilroy">David Gilroy</option>
-<option value="Christopher Green">Christopher Green</option>
-<option value="Robert Green">Robert Green</option>
-<option value="Clive Herbert">Clive Herbert</option>
-<option value="Peter Holleran">Peter Holleran</option>
-<option value="Roger Ireland">Roger Ireland</option>
-<option value="David T Jackson">David T Jackson</option>
-<option value="John Jackson">John Jackson</option>
-<option value="Thomas Lemin">Thomas Lemin</option>
-<option value="James Little">James Little</option>
-<option value="Bryan Maddison">Bryan Maddison</option>
-<option value="Dave Scurfield">Dave Scurfield</option>               
-<option value="Brian Simpson">Brian Simpson</option>
-<option value="John Smith">John Smith</option>
-<option value="Tony Smith">Tony Smith</option>
-<option value="John Summerbell">John Summerbell</option>
-<option value="Neil Tait">Neil Tait</option>
-<option value="Roly Thompson">Roly Thompson</option>                
-<option value="Michael Varnom">Michael Varnom</option>
-<option value="Brian Wray">Brian Wray</option>
-
-
+               <option value="Dale Aitkenhead">Dale Aitkenhead</option>
+               <option value="Keith Belshaw">Keith Belshaw</option>
+               <option value="Stewart Brodie">Stewart Brodie</option>
+               <option value="Dave Cave">Dave Cave</option>
+               <option value="Craig Caesar">Craig Caesar</option>
+               <option value="Clive Caisley">Clive Caisley</option>
+               <option value="Ken Clark">Ken Clark</option>
+               <option value="Robert Connelly">Robert Connelly</option>
+               <option value="Jed Cornhill">Jed Cornhill</option>
+               <option value="Alexander Coupland">Alexander Coupland</option>
+               <option value="Gary Cowman">Gary Cowman</option>
+               <option value="Andy Davison">Andy Davison</option>
+               <option value="John Dean">John Dean</option>
+               <option value="William French">William French</option>
+               <option value="David Gilroy">David Gilroy</option>
+               <option value="Christopher Green">Christopher Green</option>
+               <option value="Robert Green">Robert Green</option>
+               <option value="Clive Herbert">Clive Herbert</option>
+               <option value="Peter Holleran">Peter Holleran</option>
+               <option value="Roger Ireland">Roger Ireland</option>
+               <option value="David T Jackson">David T Jackson</option>
+               <option value="John Jackson">John Jackson</option>
+               <option value="Thomas Lemin">Thomas Lemin</option>
+               <option value="James Little">James Little</option>
+               <option value="Bryan Maddison">Bryan Maddison</option>
+               <option value="Dave Scurfield">Dave Scurfield</option>
+               <option value="Brian Simpson">Brian Simpson</option>
+               <option value="John Smith">John Smith</option>
+               <option value="Tony Smith">Tony Smith</option>
+               <option value="John Summerbell">John Summerbell</option>
+               <option value="Neil Tait">Neil Tait</option>
+               <option value="Roly Thompson">Roly Thompson</option>
+               <option value="Michael Varnom">Michael Varnom</option>
+               <option value="Brian Wray">Brian Wray</option>
             </select>
             <br><br><br><br>
-            
-                        
-<address>
-whilst testing, report errors etc to <a href="mailto:longhirstseniors2021@gmail.com">Longhirstseniors</a>.<br>
-<br><br><br><br>  
-</address>
-            
-
-            
-            
+            <address>
+               whilst testing, report errors etc to <a href="mailto:longhirstseniors2021@gmail.com">Longhirstseniors</a>.<br>
+               <br><br><br><br>  
+            </address>
             <br><br><br><br>      
             <script>
-                
- function myFunction() {
-                  
- var x = document.getElementById("mySelect").value;
- window.location=window.location;
-               
-               
-
-if ( x == 'score entry' ) {               
-   window.location.href ="https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform";            
-}               
-               
-if ( x == 'hcp adjustments' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=107376536&single=true';
-}
-if ( x == 'lakes hole stats' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2090709960&single=true';
-}
-if ( x == 'dawson hole stats' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1064431565&single=true';
-}
-if ( x == 'lakes' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1809757953&single=true';
-}
-if ( x == 'dawson' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=910026648&single=true';
-}
-
-    
-    
-    
-    
-if ( x == 'Graham Airey' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=754604201&single=true';
-}
-
-if ( x == 'Craig Caesar' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1292392088&single=true';
-}
-   
-if ( x == 'Clive Caisley' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=668705844&single=true';
-}
-if ( x == 'Ken Clark' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=63686915&single=true';
-}
-if ( x == 'Robert Connelly' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2063925832&single=true';
-}
-if ( x == 'Jed Cornhill' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1139060609&single=true';
-}   
-if ( x == 'Alexander Coupland' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1770991226&single=true';
-}    
-if ( x == 'Gary Cowman' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=52138449&single=true';
-}
-if ( x == 'John Dean' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1716536578&single=true';
-}
-if ( x == 'William French' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=40870645&single=true';
-}    
- 
-
-if ( x == 'Christopher Green' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=111411452&single=true';
-}
-if ( x == 'Robert Green' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1227693924&single=true';
-}
-    
-      
-if ( x == 'Clive Herbert' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1878764260&single=true';
-}  
- if ( x == 'Roger Ireland' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=905355792&single=true';
-}   
-if ( x == 'John Jackson' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1092229509&single=true';
-}   
-    
-    
-    
-
-if ( x == 'Thomas Lemin' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1585966002&single=true';
-}
-
-if ( x == 'James Little' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=74268809&single=true';
-}
-if ( x == 'John Smith' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=604017523&single=true';
-}   
-if ( x == 'John Summerbell' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=200822097&single=true';
-}
-
-
-
-
-
-
-
-if ( x == 'Neil Tait' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=343267406&single=true';
-}
-if ( x == 'Roger Ireland' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=905355792&single=true';
-}
-if ( x == 'Brian Wray' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2143836123&single=true';
-}
-if ( x == 'David T Jackson' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2092885105&single=true';
-}
-if ( x == 'David Gilroy' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1494830988&single=true';
-}
-
-if ( x == 'Bryan Maddison' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1376200182&single=true';
-}
-
-if ( x == 'Tony Martin' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1828081837&single=true';
-}  
-    
-if ( x == 'Peter Holleran' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1711154082&single=true';
-}
-
-if ( x == 'Dale Aitkenhead' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1509555875&single=true';
-}
-if ( x == 'Keith Belshaw' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=595875691&single=true';
-}
-    
-if ( x == 'Stewart Brodie' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1858681860&single=true';
-}    
-    
-if ( x == 'Dave Cave' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1225505216&single=true';
-}
-if ( x == 'Andy Davison' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1058016022&single=true';
-}
-    
-    
-if ( x == 'Dave Scurfield' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1001185908&single=true';
-}    
-    
-if ( x == 'Brian Simpson' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=508024669&single=true';
-}
-if ( x == 'Tony Smith' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2046602312&single=true';
-}
-
-if ( x == 'Roly Thompson' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=442044176&single=true';
-}   
- if ( x == 'Michael Varnom' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1563807702&single=true';
-}   
-    
-    
-    
-    
-    
-if ( x == 'twos' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1270023006&single=true';
-}
-if ( x == 'check CH' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1257975779&single=true';
-}
-if ( x == 'sorted results' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1455933323&single=true';
-}
-if ( x == 'latest results' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=827505463&single=true';
-}
-if ( x == 'legend' ) {
-window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=138098929&single=true';
-}
-if ( x == 'finishes' ) { 
- window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=130711768&single=true';
-}   
-   
-                
-}  
-               
-               
-               
-               window.onunload = function(){};
-               
-               if (window.history.state != null && window.history.state.hasOwnProperty('historic')) {
-                   if (window.history.state.historic == true) {
-                       document.body.style.display = 'none';
-                       window.history.replaceState({historic: false}, '');
-                       window.location.reload();
-                   } else {
-                       window.history.replaceState({historic  : true}, '');
-                   }
-               } else {
-                   window.history.replaceState({historic  : true}, '');
+               function myFunction() {
+                                
+               var x = document.getElementById("mySelect").value;
+               window.location=window.location;
+               if ( x == 'score entry' ) {               
+                 window.location.href ="https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform";            
+               }               
+               if ( x == 'hcp adjustments' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=107376536&single=true';
                }
+               if ( x == 'lakes hole stats' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2090709960&single=true';
+               }
+               if ( x == 'dawson hole stats' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1064431565&single=true';
+               }
+               if ( x == 'lakes' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1809757953&single=true';
+               }
+               if ( x == 'dawson' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=910026648&single=true';
+               }
+               if ( x == 'Graham Airey' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=754604201&single=true';
+               } 
+               if ( x == 'Dale Aitkenhead' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1509555875&single=true';
+               }
+               if ( x == 'Keith Belshaw' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=595875691&single=true';
+               }
+               if ( x == 'Stewart Brodie' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1858681860&single=true';
+               }    
+               if ( x == 'Craig Caesar' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1292392088&single=true';
+               }
+               if ( x == 'Clive Caisley' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=668705844&single=true';
+               }
+               if ( x == 'Dave Cave' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1225505216&single=true';
+               }
+               if ( x == 'Ken Clark' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=63686915&single=true';
+               }
+               if ( x == 'Robert Connelly' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2063925832&single=true';
+               }
+               if ( x == 'Jed Cornhill' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1139060609&single=true';
+               }   
+               if ( x == 'Alexander Coupland' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1770991226&single=true';
+               }    
+               if ( x == 'Gary Cowman' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=52138449&single=true';
+               }
+               if ( x == 'Andy Davison' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1058016022&single=true';
+               }
+               if ( x == 'John Dean' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1716536578&single=true';
+               }
+               if ( x == 'William French' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=40870645&single=true';
+               }    
+               if ( x == 'David Gilroy' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1494830988&single=true';
+               }
+               if ( x == 'Christopher Green' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=111411452&single=true';
+               }
+               if ( x == 'Robert Green' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1227693924&single=true';
+               }
+               if ( x == 'Clive Herbert' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1878764260&single=true';
+               }  
+               if ( x == 'Peter Holleran' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1711154082&single=true';
+               }
+               if ( x == 'Roger Ireland' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=905355792&single=true';
+               }   
+               
+               if ( x == 'David T Jackson' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2092885105&single=true';
+               }
+               if ( x == 'John Jackson' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1092229509&single=true';
+               }   
+               if ( x == 'Thomas Lemin' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1585966002&single=true';
+               }
+               if ( x == 'James Little' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=74268809&single=true';
+               }
+               if ( x == 'Bryan Maddison' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1376200182&single=true';
+               }
+               if ( x == 'Tony Martin' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1828081837&single=true';
+               } 
+               if ( x == 'John Smith' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=604017523&single=true';
+               }   
+               if ( x == 'John Summerbell' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=200822097&single=true';
+               }
+               if ( x == 'Neil Tait' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=343267406&single=true';
+               }
+               if ( x == 'Brian Wray' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2143836123&single=true';
+               }
+               if ( x == 'Dave Scurfield' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1001185908&single=true';
+               }    
+               if ( x == 'Brian Simpson' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=508024669&single=true';
+               }
+               if ( x == 'Tony Smith' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2046602312&single=true';
+               }
+               
+               if ( x == 'Roly Thompson' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=442044176&single=true';
+               }   
+               if ( x == 'Michael Varnom' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1563807702&single=true';
+               }   
+                  
+               if ( x == 'twos' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1270023006&single=true';
+               }
+               if ( x == 'check CH' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1257975779&single=true';
+               }
+               if ( x == 'sorted results' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1455933323&single=true';
+               }
+               if ( x == 'latest results' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=827505463&single=true';
+               }
+               if ( x == 'legend' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=138098929&single=true';
+               }
+               if ( x == 'finishes' ) { 
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=130711768&single=true';
+               }   
+                 
+                              
+               }  
+                             
+                             
+                             
+                             window.onunload = function(){};
+                             
+                             if (window.history.state != null && window.history.state.hasOwnProperty('historic')) {
+                                 if (window.history.state.historic == true) {
+                                     document.body.style.display = 'none';
+                                     window.history.replaceState({historic: false}, '');
+                                     window.location.reload();
+                                 } else {
+                                     window.history.replaceState({historic  : true}, '');
+                                 }
+                             } else {
+                                 window.history.replaceState({historic  : true}, '');
+                             }
+                          
             </script>
          </div>
       </section>
    </body>
 </html>
-
+<!DOCTYPE html>
+<html lang="en">
+   <style>
+      body {
+      background: DodgerBlue;
+      font-family: arial, sans-serif;
+      font-size: 30px;
+      color: #ffffff;
+      }
+      select {
+      width: 350px;
+      height: 50px;
+      position: relative;
+      #box-shadow: 1px 1px 1px 1px cyan;
+      font-size:30px;
+      color: #ffffff;
+      background-color: #097BC0
+      }
+      .atitle {
+      font-size:60px;
+      }
+      .asubtitle {
+      font-size:12px;
+      }
+   </style>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+      <meta name="description" content="Longhirst seniors" />
+      <meta name="author" content="Bryan M" />
+      <title>Longhirst seniors</title>
+      <!-- Font Awesome icons (free version)-->
+      <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous">      </script>
+      <!-- Google fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+      <!-- Core theme CSS (includes Bootstrap)
+         <link href="styles.css" rel="stylesheet" />
+         -->
+   </head>
+   <body>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="description" content="Longhirst seniors" />
+      <meta name="author" content="Bryan M" />
+      <title>Longhirst seniors</title>
+      <section class="page-section bg-primary text-white mb-0" id="hcp">
+         <div class="container">
+            <div class="atitle">
+               Seniors
+               <img src="fallovergolfer.gif" alt="Golfer" width="60" height="80">
+               <br>
+               Winter Golf
+               <br>
+               <div class="asubtitle">
+                  (1st November 2021 to 28th March 2022)
+               </div>
+            </div>
+            <br><br>
+            <script>
+               let selects = document.getElementsByTagName('select');
+               for (let i = 0; i < selects.length; ++i) {
+               let currentSelect = selects[i];
+               let selectedOption = currentSelect.querySelector('option[selected]');
+               if (SelectedOption) currentSelect.value = selectedOption.value;
+               }
+            </script>
+            <select id="mySelect" onchange="myFunction();">
+               <option disabled selected valuestyle="display:none;" >Select an option here</option>
+               <!--
+                  <select id="mySelect" onchange="myFunction();" onfocus="this.selectedIndex = -1;">
+                     <option disabled selected valuestyle="display:none;" >Select an option here</option>
+                   -->
+               <!--            
+                  <option disabled value="" style="color:cyan;">Input screens</option>
+                  -->
+               <option value="score entry">Score Entry</option>
+               <!--
+                  <option disabled value="" style="color:cyan;">Information pages</option>
+                  -->
+               <option value="sorted results">All results</option>
+               <option value="latest results">Latest results</option>
+               <option value="dawson hole stats">Dawson hole stats</option>
+               <option value="lakes hole stats">Lakes hole stats</option>
+               <option value="finishes">Top 5 finishes</option>
+               <option value="dawson">Dawson card</option>
+               <option value="lakes">Lakes card</option>
+               <option value="twos">Twos</option>
+               <option value="hcp adjustments">Handicap adjustments</option>
+               <option value="legend">Legend</option>
+               <!--
+                  <option disabled value="" style="color:cyan;">Member listings</option>
+                  -->
+               <option value="Graham Airey">Graham Airey</option>
+               <option value="Dale Aitkenhead">Dale Aitkenhead</option>
+               <option value="Keith Belshaw">Keith Belshaw</option>
+               <option value="Stewart Brodie">Stewart Brodie</option>
+               <option value="Dave Cave">Dave Cave</option>
+               <option value="Craig Caesar">Craig Caesar</option>
+               <option value="Clive Caisley">Clive Caisley</option>
+               <option value="Ken Clark">Ken Clark</option>
+               <option value="Robert Connelly">Robert Connelly</option>
+               <option value="Jed Cornhill">Jed Cornhill</option>
+               <option value="Alexander Coupland">Alexander Coupland</option>
+               <option value="Gary Cowman">Gary Cowman</option>
+               <option value="Andy Davison">Andy Davison</option>
+               <option value="John Dean">John Dean</option>
+               <option value="William French">William French</option>
+               <option value="David Gilroy">David Gilroy</option>
+               <option value="Christopher Green">Christopher Green</option>
+               <option value="Robert Green">Robert Green</option>
+               <option value="Clive Herbert">Clive Herbert</option>
+               <option value="Peter Holleran">Peter Holleran</option>
+               <option value="Roger Ireland">Roger Ireland</option>
+               <option value="David T Jackson">David T Jackson</option>
+               <option value="John Jackson">John Jackson</option>
+               <option value="Thomas Lemin">Thomas Lemin</option>
+               <option value="James Little">James Little</option>
+               <option value="Bryan Maddison">Bryan Maddison</option>
+               <option value="Dave Scurfield">Dave Scurfield</option>
+               <option value="Brian Simpson">Brian Simpson</option>
+               <option value="John Smith">John Smith</option>
+               <option value="Tony Smith">Tony Smith</option>
+               <option value="John Summerbell">John Summerbell</option>
+               <option value="Neil Tait">Neil Tait</option>
+               <option value="Roly Thompson">Roly Thompson</option>
+               <option value="Michael Varnom">Michael Varnom</option>
+               <option value="Brian Wray">Brian Wray</option>
+            </select>
+            <br><br><br><br>
+            <address>
+               whilst testing, report errors etc to <a href="mailto:longhirstseniors2021@gmail.com">Longhirstseniors</a>.<br>
+               <br><br><br><br>  
+            </address>
+            <br><br><br><br>      
+            <script>
+               function myFunction() {
+                                
+               var x = document.getElementById("mySelect").value;
+               window.location=window.location;
+               if ( x == 'score entry' ) {               
+                 window.location.href ="https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform";            
+               }               
+               if ( x == 'hcp adjustments' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=107376536&single=true';
+               }
+               if ( x == 'lakes hole stats' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2090709960&single=true';
+               }
+               if ( x == 'dawson hole stats' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1064431565&single=true';
+               }
+               if ( x == 'lakes' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1809757953&single=true';
+               }
+               if ( x == 'dawson' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=910026648&single=true';
+               }
+               if ( x == 'Graham Airey' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=754604201&single=true';
+               } 
+               if ( x == 'Dale Aitkenhead' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1509555875&single=true';
+               }
+               if ( x == 'Keith Belshaw' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=595875691&single=true';
+               }
+               if ( x == 'Stewart Brodie' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1858681860&single=true';
+               }    
+               if ( x == 'Craig Caesar' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1292392088&single=true';
+               }
+               if ( x == 'Clive Caisley' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=668705844&single=true';
+               }
+               if ( x == 'Dave Cave' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1225505216&single=true';
+               }
+               if ( x == 'Ken Clark' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=63686915&single=true';
+               }
+               if ( x == 'Robert Connelly' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2063925832&single=true';
+               }
+               if ( x == 'Jed Cornhill' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1139060609&single=true';
+               }   
+               if ( x == 'Alexander Coupland' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1770991226&single=true';
+               }    
+               if ( x == 'Gary Cowman' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=52138449&single=true';
+               }
+               if ( x == 'Andy Davison' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1058016022&single=true';
+               }
+               if ( x == 'John Dean' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1716536578&single=true';
+               }
+               if ( x == 'William French' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=40870645&single=true';
+               }    
+               if ( x == 'David Gilroy' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1494830988&single=true';
+               }
+               if ( x == 'Christopher Green' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=111411452&single=true';
+               }
+               if ( x == 'Robert Green' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1227693924&single=true';
+               }
+               if ( x == 'Clive Herbert' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1878764260&single=true';
+               }  
+               if ( x == 'Peter Holleran' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1711154082&single=true';
+               }
+               if ( x == 'Roger Ireland' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=905355792&single=true';
+               }   
+               
+               if ( x == 'David T Jackson' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2092885105&single=true';
+               }
+               if ( x == 'John Jackson' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1092229509&single=true';
+               }   
+               if ( x == 'Thomas Lemin' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1585966002&single=true';
+               }
+               if ( x == 'James Little' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=74268809&single=true';
+               }
+               if ( x == 'Bryan Maddison' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1376200182&single=true';
+               }
+               if ( x == 'Tony Martin' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1828081837&single=true';
+               } 
+               if ( x == 'John Smith' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=604017523&single=true';
+               }   
+               if ( x == 'John Summerbell' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=200822097&single=true';
+               }
+               if ( x == 'Neil Tait' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=343267406&single=true';
+               }
+               if ( x == 'Brian Wray' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2143836123&single=true';
+               }
+               if ( x == 'Dave Scurfield' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1001185908&single=true';
+               }    
+               if ( x == 'Brian Simpson' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=508024669&single=true';
+               }
+               if ( x == 'Tony Smith' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2046602312&single=true';
+               }
+               
+               if ( x == 'Roly Thompson' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=442044176&single=true';
+               }   
+               if ( x == 'Michael Varnom' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1563807702&single=true';
+               }   
+                  
+               if ( x == 'twos' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1270023006&single=true';
+               }
+               if ( x == 'check CH' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1257975779&single=true';
+               }
+               if ( x == 'sorted results' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1455933323&single=true';
+               }
+               if ( x == 'latest results' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=827505463&single=true';
+               }
+               if ( x == 'legend' ) {
+               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=138098929&single=true';
+               }
+               if ( x == 'finishes' ) { 
+               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=130711768&single=true';
+               }   
+                 
+                              
+               }  
+                             
+                             
+                             
+                             window.onunload = function(){};
+                             
+                             if (window.history.state != null && window.history.state.hasOwnProperty('historic')) {
+                                 if (window.history.state.historic == true) {
+                                     document.body.style.display = 'none';
+                                     window.history.replaceState({historic: false}, '');
+                                     window.location.reload();
+                                 } else {
+                                     window.history.replaceState({historic  : true}, '');
+                                 }
+                             } else {
+                                 window.history.replaceState({historic  : true}, '');
+                             }
+                          
+            </script>
+         </div>
+      </section>
+   </body>
+</html>
 
