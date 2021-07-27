@@ -24,54 +24,16 @@
       .asubtitle {
       font-size:12px;
       }
-       #bowlG{
-	position:relative;
-	width:143px;
-	height:143px;
-	margin:auto;
-}
-
-#bowl_ringG{
-	position:absolute;
-	width:143px;
-	height:143px;
-	border:12px solid rgb(255,255,255);
-	border-radius:143px;
-}
-
-.ball_holderG{
-	position:absolute;
-	width:38px;
-	height:143px;
-	left:52px;
-	top:0px;
-	animation-name:ball_moveG;
-	animation-duration:0.775s;
-	animation-iteration-count:infinite;
-	animation-timing-function:linear;
-}
-
-.ballG{
-	position:absolute;
-	left:0px;
-	top:-33px;
-	width:57px;
-	height:57px;
-	background:rgb(255,255,255);
-	border-radius:48px;
-}
-
-
-
-@keyframes ball_moveG{
-	0%{
-		transform:rotate(0deg)
-	}
-
-	100%{
-		transform:rotate(360deg)
-	}
-}
+ 
+      .loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('1488.png') 50% 50% no-repeat DodgerBlue;
+      }
    </style>
    <head>
       <meta charset="utf-8" />
@@ -80,8 +42,17 @@
       <meta name="author" content="Bryan M" />
       <title>Longhirst seniors</title>
       <link rel="icon" type="image/x-icon" href="favicon.ico" />
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
    </head>
+   
+   <script>
+    $(window).load(function() {
+        $(".loader").fadeOut("slow");
+});
+</script>
    <body>
+        <!-- Preloader -->
+    <div class="loader"></div>
       <section class="page-section bg-primary text-white mb-0" id="hcp">
          <div class="container">
             <div class="atitle">
@@ -155,14 +126,7 @@
             <br><br>
           	 
 		 
-           <div id="bowlG">
-                <div id="bowl_ringG">
-                    <div class="ball_holderG">
-                        <div class="ballG">
-                        </div>
-                    </div>
-                </div>
-            </div>  
+           
                 <br><br>
 		 
 		<a href=Walkthrough.pdf#zoom=150>A Score Entry walkthrough PDF is available here
@@ -181,148 +145,148 @@
                var x = document.getElementById("mySelect").value;
                window.location=window.location;
                if ( x == 'score entry' ) {               
-                 window.location.href ='https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform';            
+                 window.location.href ='ScoreEntryWrapper.html';            
                }               
                if ( x == 'hcp adjustments' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=107376536&single=true';
+               window.location.href = 'HcpAdjustmentsWrapper.html';
                }
                if ( x == 'lakes hole stats' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2090709960&single=true';
+               window.location.href = 'LakesHoleStatsWrapper.html';
                }
                if ( x == 'dawson hole stats' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1064431565&single=true';
+               window.location.href = 'DawsonHoleStatsWrapper.html';
                }
                if ( x == 'lakes' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1809757953&single=true';
+               window.location.href = 'LakesWrapper.html';
                }
                if ( x == 'dawson' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=910026648&single=true';
+               window.location.href = 'DawsonWrapper.html';
                }
                if ( x == 'Graham Airey' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=754604201&single=true';
+               window.location.href = 'GrahamAireyWrapper.html';
                } 
                if ( x == 'Dale Aitkenhead' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1509555875&single=true';
+               window.location.href = 'DaleAitkenheadWrapper.html';
                }
                if ( x == 'Keith Belshaw' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=595875691&single=true';
+               window.location.href = 'KeithBelshawWrapper.html';
                }
                if ( x == 'Stewart Brodie' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1858681860&single=true';
+               window.location.href = 'StewartBrodieWrapper.html';
                }    
                if ( x == 'Craig Caesar' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1292392088&single=true';
+               window.location.href = 'CraigCaesarWrapper.html';
                }
                if ( x == 'Clive Caisley' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=668705844&single=true';
+               window.location.href = 'CliveCaisleyWrapper.html';
                }
                if ( x == 'Dave Cave' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1225505216&single=true';
+               window.location.href = 'DaveCaveWrapper.html';
                }
                if ( x == 'Ken Clark' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=63686915&single=true';
+               window.location.href = 'KenClarkWrapper.html';
                }
                if ( x == 'Robert Connelly' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2063925832&single=true';
+               window.location.href = 'RobertConnellyWrapper.html';
                }
                if ( x == 'Jed Cornhill' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1139060609&single=true';
+               window.location.href = 'JedCornhillWrapper.html';
                }   
                if ( x == 'Alexander Coupland' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1770991226&single=true';
+               window.location.href = 'AlexanderCouplandWrapper.html';
                }    
                if ( x == 'Gary Cowman' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=52138449&single=true';
+               window.location.href = 'GaryCowmanWrapper.html';
                }
                if ( x == 'Andy Davison' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1058016022&single=true';
+               window.location.href = 'AndyDavisonWrapper.html';
                }
                if ( x == 'John Dean' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1716536578&single=true';
+               window.location.href = 'JohnDeanWrapper.html';
                }
                if ( x == 'William French' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=40870645&single=true';
+               window.location.href = 'WilliamFrenchWrapper.html';
                }    
                if ( x == 'David Gilroy' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1489648590&single=true';
+               window.location.href = 'DavidGilroyWrapper.html';
                }
                if ( x == 'Christopher Green' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=111411452&single=true';
+               window.location.href = 'ChristopherGreenWrapper.html';
                }
                if ( x == 'Robert Green' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1227693924&single=true';
+               window.location.href = 'RobertGreenWrapper.html';
                }
                if ( x == 'Clive Herbert' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1878764260&single=true';
+               window.location.href = 'CliveHerbertWrapper.html';
                }  
                if ( x == 'Peter Holleran' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1711154082&single=true';
+               window.location.href = 'PeterHolleranWrapper.html';
                }
                if ( x == 'Roger Ireland' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=905355792&single=true';
+               window.location.href = 'RogerIrelandWrapper.html';
                }   
                if ( x == 'David T Jackson' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2092885105&single=true';
+               window.location.href = 'DavidTJacksonWrapper.html';
                }
                if ( x == 'John Jackson' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1092229509&single=true';
+               window.location.href = 'JohnJacksonWrapper.html';
                }   
                if ( x == 'Thomas Lemin' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1585966002&single=true';
+               window.location.href = 'ThomasLeminWrapper.html';
                }
                if ( x == 'James Little' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=74268809&single=true';
+               window.location.href = 'JamesLittleWrapper.html';
                }
                if ( x == 'Bryan Maddison' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1376200182&single=true';
+               window.location.href = 'BryanMaddisonWrapper.html';
                }
                if ( x == 'Tony Martin' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1828081837&single=true';
+               window.location.href = 'TonyMartinWrapper.html';
                } 
                if ( x == 'Dave Scurfield' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1001185908&single=true';
+               window.location.href = 'DaveScurfieldWrapper.html';
                }    
                if ( x == 'Brian Simpson' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=508024669&single=true';
+               window.location.href = 'BrianSimpsonWrapper.html';
                }
                if ( x == 'Tony Smith' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2046602312&single=true';
+               window.location.href = 'TonySmithWrapper.html';
                }
                if ( x == 'John Smith' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=604017523&single=true';
+               window.location.href = 'JohnSmithWrapper.html';
                }   
                if ( x == 'John Summerbell' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=200822097&single=true';
+               window.location.href = 'JohnSummerbellWrapper.html';
                }
                if ( x == 'Neil Tait' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=343267406&single=true';
+               window.location.href = 'Neil Tait';
                }
                if ( x == 'Roly Thompson' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=442044176&single=true';
+               window.location.href = 'RolyThompsonWrapper.html';
                }   
                if ( x == 'Michael Varnom' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1563807702&single=true';
+               window.location.href = 'MichaelVarnomWrapper.html';
                }   
                if ( x == 'Brian Wray' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2143836123&single=true';
+               window.location.href = 'BrianWrayWrapper.html';
                }   
                if ( x == 'twos' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1270023006&single=true';
+               window.location.href = 'TwosWrapper.html';
                }
                if ( x == 'check CH' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1257975779&single=true';
+               window.location.href = 'CheckCHWrapper.html';
                }
                if ( x == 'sorted results' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1455933323&single=true';
+               window.location.href = 'SortedResultsWrapper.html';
                }
                if ( x == 'latest results' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=827505463&single=true';
+               window.location.href = 'LatestResultsWrapper.html';
                }
                if ( x == 'legend' ) {
-               window.location.href = 'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=138098929&single=true';
+               window.location.href = 'LegendWrapper.html';
                }
                if ( x == 'finishes' ) { 
-               window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=130711768&single=true';
+               window.location.href = 'FinishesWrapper.html';
                }   
                  
                               
@@ -341,24 +305,12 @@
               
               
               
-              
-            const preloader = document.querySelector('#bowlG');
-            const fadeEffect = setInterval(() => {
-            if (!preloader.style.opacity) {
-             preloader.style.opacity = 1;
-            }
-            if (preloader.style.opacity > 0) {
-               preloader.style.opacity -= 0.1;
-            } else {
-               clearInterval(fadeEffect);
-            }
-            }, 80);
-
-            window.addEventListener('beforeload', fadeEffect);
+         
                                                  
          </script>
       </div>
    </section>
 </body>
 </html>
+
 
