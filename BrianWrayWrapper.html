@@ -5,7 +5,7 @@
     <title>Winter 2021</title>
     <!-- jQuery Plugin -->
     <script src="jquery-3.6.0.min.js"></script>
-</head>
+</head>   
 <style>
     .loader {
     position: fixed;
@@ -15,16 +15,19 @@
     height: 100%;
     z-index: 9999;
     background: url('1488.png') 50% 50% no-repeat DodgerBlue;
+    font-family: arial, sans-serif;
+    font-size: 30px;
+    color: cyan;
     }
 </style>
 <script>
-  $(window).on('load', function () {
+    $(window).on('load', function () {
        $(".loader").fadeOut("slow");
  }); 
 </script>
 <body>
     <!-- Preloader -->
-    <div class="loader"></div>
+    <div class="loader"><br>.. accessing data on google servers .. which can be slow at times</div>
     <div id="content">
     <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2143836123&single=true" 
     frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0%;left:0px;right:0px;bottom:0px" height="100%" width="100%">
