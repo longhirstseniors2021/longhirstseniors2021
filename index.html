@@ -45,7 +45,22 @@
         color: cyan;   
       } 
            
-  
+    .sitemessage {
+    display: inline-block;
+    white-space: nowrap;
+    animation: floatText 30s infinite linear;
+    padding-left: 100%; /*Initial offset*/
+    }
+    .sitemessage:hover {
+    animation-play-state: paused;
+    }
+    @keyframes floatText {
+    to {
+    transform: translateX(-100%);
+    }
+    }
+    
+   
   </style>
   <meta charset="utf-8" />
   <meta name="viewport" content=
@@ -263,7 +278,9 @@
     <br />
     
     <marquee behavior="scroll" hspace="10%" direction="left">latest: season starts Monday 2nd November ...</marquee>
-    
+    <div class="sitemessage">
+  latest: season starts Monday 2nd November ...
+</div>
     <script type="text/javascript">
             
                function myFunction() {
