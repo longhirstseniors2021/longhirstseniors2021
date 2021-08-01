@@ -85,6 +85,7 @@
             <select id="mySelect" onchange="myFunction();">
                <option disabled selected valuestyle="display:none;" >Select an option here</option>
                <option value="score entry">Score Entry</option>
+	       <option value=rules">Rules</options>  
                <option value="sorted results">All results</option>
                <option value="latest results">Latest results</option>
                <option value="dawson hole stats">Dawson hole stats</option>
@@ -155,6 +156,9 @@
                if ( x == 'score entry' ) {               
                  window.location.href ='ScoreEntryWrapper.html';            
                }               
+	       if ( x == 'rules' ) {               
+                 window.location.href ='rules.html';  
+	       }
                if ( x == 'hcp adjustments' ) {
                window.location.href = 'HcpAdjustmentsWrapper.html';
                }
