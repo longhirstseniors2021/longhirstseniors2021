@@ -90,7 +90,6 @@
                <option value="latest results">Latest results</option>
                <option value="dawson hole stats">Dawson hole stats</option>
                <option value="lakes hole stats">Lakes hole stats</option>
-               <option value="finishes">Top 5 finishes</option>
                <option value="dawson">Dawson card</option>
                <option value="lakes">Lakes card</option>
                <option value="twos">Twos</option>
@@ -142,6 +141,7 @@
                                 
                var x = document.getElementById("mySelect").value;
                window.location=window.location;
+		       
                if ( x == 'score entry' ) {               
                  window.location.href ='ScoreEntryWrapper.html';            
                }               
@@ -286,9 +286,9 @@
                if ( x == 'legend' ) {
                window.location.href = 'LegendWrapper.html';
                }
-               if ( x == 'finishes' ) { 
-               window.location.href = 'FinishesWrapper.html';
-               }   
+               //if ( x == 'finishes' ) { 
+               //window.location.href = 'FinishesWrapper.html';
+              // }   
                  
                               
                }  
@@ -306,9 +306,28 @@
               
 			</script>
 			<script type="text/javascript">
+				
+				
+		window.addEventListener( "pageshow", function ( event ) {
+  			var historyTraversal = event.persisted || 
+                         ( typeof window.performance != "undefined" && 
+                              window.performance.navigation.type === 2 );
+  		if ( historyTraversal ) {
+   			 // Handle page restore.
+   			 window.location.reload();
+ 		 }
+		});	
+				
+				
+				
+				
+				
+				
    $(window).on('load', function () {
        $(".loader").fadeOut("slow");
  }); 
+				
+				
 </script>
              
       </div>
