@@ -481,7 +481,11 @@
                window.location.href = 'BrianSimpsonWrapper.html';
                }
                if ( x == 'Tony Smith' ) {
-               window.location.href = 'TonySmithWrapper.html';
+                if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
+                      window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2132308523&single=true';
+                    } else {
+                      window.location.href = 'TonySmithWrapper.html';
+                    }  
                }
                if ( x == 'John Smith' ) {
                window.location.href = 'JohnSmithWrapper.html';
