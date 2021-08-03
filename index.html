@@ -465,7 +465,7 @@
                window.location.href = 'JamesLittleWrapper.html';
                }
                if ( x == 'Bryan Maddison' ) {
-                  if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                  if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
                       window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1148090998&single=true';
                     } else {
                       window.location.href = 'BryanMaddisonWrapper.html';
@@ -475,22 +475,7 @@
                window.location.href = 'TonyMartinWrapper.html';
                } 
                if ( x == 'Dave Scurfield' ) {
-                 
-                 
-                                
-                 
-                 if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-    alert("it's a phone"); // your code here
-}
-                 
-                 
-                 
-                 
-
-                 
-                 
-                 
-               //window.location.href = 'DaveScurfieldWrapper.html';
+               window.location.href = 'DaveScurfieldWrapper.html';
                }    
                if ( x == 'Brian Simpson' ) {
                window.location.href = 'BrianSimpsonWrapper.html';
