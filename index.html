@@ -465,7 +465,11 @@
                window.location.href = 'JamesLittleWrapper.html';
                }
                if ( x == 'Bryan Maddison' ) {
-               window.location.href = 'BryanMaddisonWrapper.html';
+                  if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                      window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1148090998&single=true';
+                    } else {
+                      window.location.href = 'BryanMaddisonWrapper.html';
+                    }   
                }
                if ( x == 'Tony Martin' ) {
                window.location.href = 'TonyMartinWrapper.html';
