@@ -63,17 +63,17 @@
     
     <br />
     <br /> 
-    <script type="text/javascript">
+    <script>
             
         function myFunction() {
                                 
             var x = document.getElementById("mySelect").value;
             window.location=window.location;
                        
-            if ( x == 'score entry' ) {               
+            if ( x == 'score entry' ) {        alert("score entry");       
                 window.location.href ='ScoreEntryWrapper.html';            
             }               
-            if ( x == 'Tony Smith' ) {
+            if ( x == 'Tony Smith' ) {       alert("ts");
                if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
                   window.location.href = 'TonySmithWrapperphone.html';
                } else {
