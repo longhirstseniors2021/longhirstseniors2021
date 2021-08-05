@@ -60,7 +60,7 @@
     <br />
     <br />
     <br />
-    
+    <p id="score"></p>
     <br />
     <br /> 
     <script>
@@ -70,10 +70,10 @@
             var x = document.getElementById("mySelect").value;
             window.location=window.location;
                        
-            if ( x == 'score entry' ) {        alert("score entry");       
+            if ( x == 'score entry' ) {        document.getElementById("score").innerHTML = "score entry";       
                 //window.location.href ='ScoreEntryWrapper.html';            
             }               
-            if ( x == 'Tony Smith' ) {       alert("ts");
+            if ( x == 'Tony Smith' ) {        document.getElementById("score").innerHTML = "tony smith";       
               // if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
                 //  window.location.href = 'TonySmithWrapperphone.html';
              //  } else {
