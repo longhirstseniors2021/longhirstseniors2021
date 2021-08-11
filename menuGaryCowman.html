@@ -35,7 +35,34 @@
       background: url('1488.png') 50% 50% no-repeat DodgerBlue;
       }
          
-      
+         
+  .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: LightGray;
+  color: DodgerBlue;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-family: arial, sans-serif;
+  font-size: 20px; 
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}  
+    
+ 
    
   </style>
   <meta charset="utf-8" />
@@ -87,7 +114,9 @@
       
     </select><br />
    <br />
-     
+      <div class="tooltip"><img src="https://drive.google.com/uc?export=view&id=1hxf6ULdQVP-jPZ571p_TVNX6vfkBUOY_" alt="c" width="45" height="45" />
+  <span class="tooltiptext">status of google link</span>
+        
      <img src="https://drive.google.com/uc?export=view&id=1hxf6ULdQVP-jPZ571p_TVNX6vfkBUOY_" alt="c" width="45" height="45" />
    
      <br />
