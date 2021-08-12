@@ -51,6 +51,11 @@
      .tooltip:hover .tooltiptext {
      visibility: visible;
      }  
+     #status {
+     font-family: arial, sans-serif;
+     font-size: 20px;
+     color: #000000;  
+     }
   </style>
   <meta charset="utf-8" />
   <meta name="viewport" content=
@@ -105,6 +110,7 @@
       google</span><br />
       <br />
       <br />
+      <div id="status"></div>
       <br />
       <br />
       <br />
@@ -122,6 +128,9 @@
                }               
                
                if ( x == 'Gary Cowman' ) {
+                  
+                  document.getElementById("status").innerHTML = "connecting - can be slow ..."; 
+               
                   if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {         
                       window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1331351375&single=true';                     
                       } else {
