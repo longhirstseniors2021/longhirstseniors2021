@@ -116,15 +116,25 @@
                    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform";
                }               
                
-               if ( x == 'Tony Smith' ) {
-                if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-                   window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1076320424&single=true';
-                           } else {
-                           window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2046602312&single=true";
-                    }  
-               }
+               if ( x == 'Tony Smith' ) { 
+                  if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {         
+                      window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1076320424&single=true';                     
+                      } else {
+                              window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=2046602312&single=true";
+                             }  
+              }
            
-     
+             if ( x == 'HCP list' ) {                     
+                 window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1036897751&single=true";
+             }   
+                         
+             if ( x == 'more' ) {               
+                window.location.href = "menuMain.html";
+                               
+            }  
+           
+    }  
+      
     window.onunload = function(){};
                              
     if (window.history.state != null && window.history.state.hasOwnProperty('historic')) {
@@ -156,6 +166,7 @@
   </div>
 </body>
 </html>
+
 
 
 
