@@ -1,3 +1,4 @@
+
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <style type="text/css">
@@ -63,13 +64,14 @@
 <body>
   <div class="container">
     <div class="atitle">
-      Seniors <img src="fallovergolfer.gif" alt="Golfer" width="70" height="90" /><br />
+      Seniors <img src="fallovergolfer.gif" width="70" height="90" /><br />
       Winter Golf<br />
 
       <div class="asubtitle">
         (1st November 2021 to 28th March 2022)
       </div>
-    </div><br />
+    </div>
+    <br />
     <br />
     <select id="mySelect" onchange="myFunction();">
       <option disabled="disabled" selected="selected" valuestyle="display:none;">
@@ -96,7 +98,7 @@
 
     <div class="tooltip">
       <img src=
-      "https://drive.google.com/uc?export=view&amp;id=1hxf6ULdQVP-jPZ571p_TVNX6vfkBUOY_" onerror="this.src = '1488.png'" alt="c" width="45" height="45" /> <span class="tooltiptext">google link indicator</span><br />
+      "https://drive.google.com/uc?export=view&amp;id=1hxf6ULdQVP-jPZ571p_TVNX6vfkBUOY_" onerror="this.src = '1488.png'" width="45" height="45" /> <span class="tooltiptext">google link indicator</span><br />
       <br />
       <br />
       <div id="status"></div>
@@ -107,6 +109,11 @@
     </div>
     <script type="text/javascript">
     
+    function getScreen(gid) {
+                
+                window.location.href ='https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=' + gid + '&single=true'    
+    }
+    
     function myFunction() {
                                 
                var x = document.getElementById("mySelect").value;
@@ -116,27 +123,21 @@
                    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform";
                }               
                
-               if ( x == 'Bryan Maddison' ) {
-                if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-                      
-                      window.location.href = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1102569933&single=true';
-                       
+                if ( x == 'Bryan Maddison' ) {
+                    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
+                        getScreen(1102569933); 
                     } else {
-                      
-                     window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1376200182&single=true";
-                      
+                        getScreen(1376200182);  
                     }  
-               }
+                }
            
-              if ( x == 'HCP list' ) {                     
-                 window.location.href = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1036897751&single=true";
-             }   
+                if ( x == 'HCP list' ) {  
+                    getScreen(1036897751);                     
+                }   
                          
-             if ( x == 'more' ) {               
-                window.location.href = "menuMain.html";
-                               
-            }  
-           
+                if ( x == 'more' ) {               
+                    window.location.href = "menuMain.html";
+                }  
     }  
       
     window.onunload = function(){};
@@ -161,11 +162,6 @@
                  }
                 });
                      
-    // JQuery easier for this                                                      
-    $(window).on('load', function () {
-    $(".loader").fadeOut("slow");
-    }); 
-                                                              
     </script>
   </div>
 </body>
