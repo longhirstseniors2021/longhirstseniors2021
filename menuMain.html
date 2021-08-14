@@ -24,6 +24,11 @@
       .asubtitle {
       font-size:12px;
       }
+      #status {
+      font-family: arial, sans-serif;
+      font-size: 20px;
+      color: #ffffff;  
+      }
 
   </style>
   <meta charset="utf-8" />
@@ -473,10 +478,11 @@ Jim Young
     </select>
     <br />
     <br />
+    <div id="status"></div>
     <br />
     <br />
     <br />
-    <br /> 
+    <br />
     <script type="text/javascript">
             
                 function getScreen(gid) {
@@ -488,6 +494,7 @@ Jim Young
                                 
                var x = document.getElementById("mySelect").value;
                window.location=window.location;
+               document.getElementById("status").innerHTML = "connecting - can be slow at times"; 
                // -----google forms pages       
                if ( x == 'score entry' ) {               
                  window.location.href ="https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform";            
