@@ -475,6 +475,10 @@ John Wright
 Jim Young
 </option>
 
+     <option value='epilogue'>
+     epilogue
+     </option>
+     
     </select>
     <br />
     <br />
@@ -1128,18 +1132,13 @@ if ( x == 'Jim Young' ) {
       getScreen(985959306);
 }}
 
-//----- -----
-if ( x == ' ' ) {
-   if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen();
-    } else {
-      getScreen();
-}}
+if ( x == 'epilogue' ) {
+   window.location.href = "epilogue.html";
+}
 
-                
-  
-                                            
-               }  
+               } 
+     
+     
                              
                window.onunload = function(){};
                              
