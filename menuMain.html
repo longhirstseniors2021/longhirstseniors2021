@@ -25,65 +25,6 @@
       font-size:12px;
       }
 
-      .loader {
-      position: fixed;
-      left: 0px;
-      top: 0px;
-      width: 100%;
-      height: 100%;
-      z-index: 9999;
-      background: url('1488.png') 50% 50% no-repeat DodgerBlue;
-      }
-         
-      #rulesh {
-        font-size:30px;
-        color: cyan;   
-      }
-      #rules {
-        font-size:20px;
-        color: cyan;   
-      } 
-           
-    .scrollmessage {
-    display: inline-block;
-    white-space: nowrap;
-    animation: floatText 20s infinite linear;
-    padding-left: 100%; /*Initial offset*/
-    }
-    .scrollmessage:hover {
-    animation-play-state: paused;
-    }
-    @keyframes floatText {
-    to {
-    transform: translateX(-100%);
-    }
-    from {color: DeepSkyBlue;}
-            
-        
-    0% {
-  font-size: 25%;
-  margin-left: 0%;
-  width: 100%;
-}
-    
-    
-    40% {
-  font-size: 100%;
-  margin-left: 0%;
-  width: 100%;
-  
-}
-    
-  95% {
-  font-size: 25%;
-  margin-left: 0%;
-  width: 100%;
-}
-      
-    to {color: white;}
-    }
-    
-   
   </style>
   <meta charset="utf-8" />
   <meta name="viewport" content=
@@ -534,12 +475,6 @@ Jim Young
     <br />
     <br />
     <br />
-    <!--
-    <div class="scrollmessage";>
-    <image src="golf-ball.png" width="50" height="50";></image> 
-  latest ... season starts Monday 1st November ...
-  </div>
-  -->
     <br />
     <br /> 
     <script type="text/javascript">
@@ -1220,11 +1155,7 @@ if ( x == ' ' ) {
                          window.location.reload();
                  }
                 });     
-                                                               
-    		$(window).on('load', function () {
-       		$(".loader").fadeOut("slow");
-    		}); 
-                                                              
+                                                                                                                
     </script>
   </div>
 </body>
