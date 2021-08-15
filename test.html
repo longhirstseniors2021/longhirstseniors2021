@@ -20,18 +20,20 @@
   }
 </style> 
 <script>
-  function myFunction(){
+ function myFunction(){
    
-var txts = ['..slow..', '..please wait..', '..working..'];
-var cols = ['<div id=sr></div>', '<div id=sb></div>', '<div id=lr></div>','<div id=lb></div>'];
-var stxt='<div id=sb>'
+var txts = [' ..slow.. ', ' ..wait.. ', ' ..working.. ',' ..loading.. ',' ..connecting.. ',' ..soon.. '];
+var cols = ['</span><span id=sr>', '</span><span id=sg>', '</span><span id=sb>','</span><span id=lr>', '</span><span id=lg>','</span><span id=lb>'];
+var stxt='<span id=sb>'
  alert(stxt);   
-for (let i = 0; i = 10; i++) {
+for (let i = 0; i < 200; i++) {
     var txt = txts[Math.floor(Math.random()*txts.length)];
+      
+
     var col = cols[Math.floor(Math.random()*cols.length)];
     stxt=stxt + col + txt
 }
-    
+  alert("stxt");   
  alert(stxt);   
 document.getElementById("msg").innerHTML = stxt;
 
@@ -39,8 +41,9 @@ document.getElementById("msg").innerHTML = stxt;
     
     
     
-window.location.href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=764553715&single=true";
+//window.location.href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=764553715&single=true";
   }
+
 
 </script>
 
