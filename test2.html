@@ -89,7 +89,7 @@ document.getElementById("msg").innerHTML = stxt + "</span>";
 
 
  /*! Fades in page on load 
-    // simple fade in and out*/
+    // simple fade in and out
 $(document).ready(function(){
 
 
@@ -99,7 +99,29 @@ $('body').fadeOut(5000);
 
 });
   
-
+*/
+  
+  
+  
+  var curCol = 0
+   var colors = ['Gray','White']
+   
+            timer = setInterval(function () {
+                if (curCol === colors.length) curCol = 0;
+                $(body).css("background", colors[curCol]);
+                curCol++;
+            }, 3000);
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
  
 
 </script>
