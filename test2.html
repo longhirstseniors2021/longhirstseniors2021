@@ -105,13 +105,10 @@ $('body').animate({backgroundColor: '#ffffff'}, '5000');
   
   
   
-  jQuery(function ($) {
-    function changeColor(selector, colors, time) {
-        /* Params:
-         * selector: string,
-         * colors: array of color strings,
-         * every: integer (in mili-seconds)
-         */
+  $(document).ready(function(){
+    var colors = ["LightSlateGray", "white"];
+    var time = 3000;
+    var selector = "body";
         var curCol = 0,
             timer = setInterval(function () {
                 if (curCol === colors.length) curCol = 0;
@@ -119,10 +116,9 @@ $('body').animate({backgroundColor: '#ffffff'}, '5000');
                 curCol++;
             }, time);
     }
-    $(window).load(function () {
-        changeColor("body", ["LightSlateGray", "white"], 3000);
-    });
-});
+    
+    
+
   
   
   
