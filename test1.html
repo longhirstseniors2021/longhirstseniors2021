@@ -47,52 +47,6 @@
      font-size: 20px;
      color: #ffffff;  
      }
-     #sr {
-  font-family: arial, sans-serif;
-  font-size: 20px;
-  color: #ff0000;
-  }
-
-#sg {
-  font-family: arial, sans-serif;
-  font-size: 20px;
-  color: #00ff00;
-  }
-#sb {
-  font-family: arial, sans-serif; 
-  font-size: 20px;
-  color: #0000ff;
-  } 
-#lr {
-  font-family: arial, sans-serif;  
-  font-size: 30px;
-  color: #ff0000;
-  }   
-#lg {
-  font-family: arial, sans-serif; 
-  font-size: 30px;
-  color: #00ff00;
-  }  
-#lb {
-  font-family: arial, sans-serif;  
-  font-size: 30px;
-  color: #0000ff;
-  }
-#gr {
-  font-family: arial, sans-serif;  
-  font-size: 40px;
-  color: #ff0000;
-  }   
-#gg {
-  font-family: arial, sans-serif; 
-  font-size: 40px;
-  color: #00ff00;
-  }  
-#gb {
-  font-family: arial, sans-serif;  
-  font-size: 40px;
-  color: #0000ff;
-  }
   </style>
   <meta charset="utf-8" />
   <meta name="viewport" content=
@@ -159,42 +113,21 @@
       <br />
     </div>
     <script type="text/javascript">
-    
-    function wscreen(){
-        window.location.href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=764553715&single=true";
    
-        var txts = [' ..slow.. ', ' ..please wait.. ', ' ..working.. ',' ..loading.. ',' ..connecting.. ',' ..soon.. ','..accessing data..'];
-        var cols = ['</span><span id=sr>', '</span><span id=sg>', '</span><span id=sb>','</span><span id=lr>', '</span><span id=lg>','</span><span id=lb>','</span><span id=gr>', '</span><span id=gg>','</span><span id=gb>'];
-        var stxt='<br><br><span id=sb>'
-    
-        for (let i = 0; i < 100; i++) {
-            var txt = txts[Math.floor(Math.random()*txts.length)];
-            var col = cols[Math.floor(Math.random()*cols.length)];
-            stxt=stxt + col + txt
-        }
-   
-        document.getElementById("msg").innerHTML = stxt + "</span>";
- 
-}
-    
-    
-    
     function getScreen(gid) {
                 
-                window.location.href ='test2.html?id=' + gid
-                
+                window.location.href ='test2.html?id=' + gid              
                 
                 //window.location.href ='https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=' + gid + '&single=true'    
     }
     
     function myFunction() {
-        
-                                
+                                 
                var x = document.getElementById("mySelect").value;
                window.location=window.location;
                document.getElementById("status").innerHTML = "connecting - can be slow at times";         
                if ( x == 'score entry' ) {               
-                   window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform";
+                   window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform";
                }               
                
                 if ( x == 'Bryan Maddison' ) {
