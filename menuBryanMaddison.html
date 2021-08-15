@@ -90,6 +90,11 @@
         HCP list
       </option>
 
+      <option value="test">
+        test
+      </option>
+      
+      
       <option value="more">
         more ...
       </option>
@@ -130,6 +135,17 @@
                         getScreen(1376200182);  
                     }  
                 }
+      
+      
+      if ( x == 'test' ) {
+                    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
+                         window.location.href = "test.html"; 
+                    } else {
+                         window.location.href = "test.html";
+                    }  
+                }
+      
+      
            
                 if ( x == 'HCP list' ) {  
                     getScreen(1036897751);                     
