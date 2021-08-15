@@ -89,7 +89,7 @@ document.getElementById("msg").innerHTML = stxt + "</span>";
 
 
    
-    // simple fade in
+    // simple fade in and out
 $(document).ready(function(){
 
 /*! Fades in page on load */
@@ -98,6 +98,20 @@ $('body').fadeIn(3000);
 $('body').fadeOut(6000);
 });
   
+  
+  
+  
+  
+ $('body').eq(1).animate({
+  backgroundColor: SlateGray
+}, 2000 );
+
+
+setTimeout(function(){
+        $('body').eq(1).animate({
+          backgroundColor: "#ffffff"
+        }, 2000 );
+},2000); 
 
 
 
