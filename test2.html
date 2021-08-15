@@ -106,15 +106,13 @@ $('body').animate({backgroundColor: '#ffffff'}, '5000');
   
   
   $(document).ready(function(){
-    var colors = ["LightSlateGray", "white"];
-    var time = 3000;
-    var selector = "body";
+    var colors = ["LightSlateGray", "white"]
         var curCol = 0,
             timer = setInterval(function () {
                 if (curCol === colors.length) curCol = 0;
-                $(selector).css("background-color", colors[curCol]);
-                curCol++;
-            }, time);
+                   $(body).css("background-color", colors[curCol]);
+                   curCol++;
+                }, 3000);
     }
     
     
