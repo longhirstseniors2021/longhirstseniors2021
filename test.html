@@ -2,19 +2,33 @@
 <html>
 <head>
 <style>
-#sr {
+  #sr {
+  font-family: arial, sans-serif;
   font-size: 20px;
   color: #ff0000;
   }
- #lr {
-  font-size: 30px;
-  color: #ff0000;
+  #sg {
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  color: #00ff00;
   }
   #sb {
+  font-family: arial, sans-serif;  
   font-size: 20px;
   color: #0000ff;
   }
+  #lr {
+  font-family: arial, sans-serif;  
+  font-size: 30px;
+  color: #ff0000;
+  }
+  #lg {
+  font-family: arial, sans-serif;  
+  font-size: 30px;
+  color: #00ff00;
+  }
   #lb {
+  font-family: arial, sans-serif;  
   font-size: 30px;
   color: #0000ff;
   }
@@ -23,14 +37,12 @@
  function myFunction(){
  window.location.href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=764553715&single=true";
   
-var txts = [' ..slow.. ', ' ..wait.. ', ' ..working.. ',' ..loading.. ',' ..connecting.. ',' ..soon.. '];
+var txts = [' ..slow.. ', ' ..wait.. ', ' ..working.. ',' ..loading.. ',' ..connecting.. ',' ..soon.. ','accessing data'];
 var cols = ['</span><span id=sr>', '</span><span id=sg>', '</span><span id=sb>','</span><span id=lr>', '</span><span id=lg>','</span><span id=lb>'];
 var stxt='<span id=sb>'
   
 for (let i = 0; i < 100; i++) {
     var txt = txts[Math.floor(Math.random()*txts.length)];
-      
-
     var col = cols[Math.floor(Math.random()*cols.length)];
     stxt=stxt + col + txt
 }
@@ -43,14 +55,9 @@ document.getElementById("msg").innerHTML = stxt;
 </script>
 
 </head>
-<body>
+<body onload="myFunction()">
   <div id=msg>
-    
-   </div>
-    
-    <body onload="myFunction()">
-
+  </div>
 </body>
-
-  </html>
+</html>
 
