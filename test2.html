@@ -63,13 +63,13 @@
     var txts = [' ..slow.. ', ' ..please wait.. ', ' ..working.. ',' ..loading.. ',' ..connecting.. ',' ..soon.. ','..accessing data..'];
     var cols = ['</span><span id=sr>', '</span><span id=sg>', '</span><span id=sb>','</span><span id=lr>', '</span><span id=lg>','</span><span id=lb>','</span><span id=gr>', '</span><span id=gg>','</span><span id=gb>'];
     var stxt='<span id=sb>'
-    
+    alert("before")
     for (let i = 0; i < 100; i++) {
         var txt = txts[Math.floor(Math.random()*txts.length)];
         var col = cols[Math.floor(Math.random()*cols.length)];
         stxt=stxt + col + txt
     }
-   
+    alert("afterefore")
     document.getElementById("msg").innerHTML = stxt + "</span>";
    
 }
