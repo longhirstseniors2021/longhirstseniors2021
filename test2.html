@@ -67,6 +67,10 @@
    // now get name
    const fname = urlParams.get('fname')
    
+   if (fname == "null") {
+     fname = "all users";
+   }
+   
 document.getElementById("msg").innerHTML = "... accessing data for " + fname;  
    
  }  
