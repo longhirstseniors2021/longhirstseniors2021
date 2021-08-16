@@ -3,57 +3,7 @@
 <head>
 <style>
   body {
-    background-color: #DarkGray;
-    }
-#sr {
-  font-family: arial, sans-serif;
-  font-size: 20px;
-  color: #ff0000;
-  }
-
-#sg {
-  font-family: arial, sans-serif;
-  font-size: 20px;
-  color: #00ff00;
-  }
-#sb {
-  font-family: arial, sans-serif; 
-  font-size: 20px;
-  color: #0000ff;
-  } 
-#lr {
-  font-family: arial, sans-serif;  
-  font-size: 30px;
-  color: #ff0000;
-  }   
-#lg {
-  font-family: arial, sans-serif; 
-  font-size: 30px;
-  color: #00ff00;
-  }  
-#lb {
-  font-family: arial, sans-serif;  
-  font-size: 30px;
-  color: #0000ff;
-  }
-#gr {
-  font-family: arial, sans-serif;  
-  font-size: 40px;
-  color: #ff0000;
-  }   
-#gg {
-  font-family: arial, sans-serif; 
-  font-size: 40px;
-  color: #00ff00;
-  }  
-#gb {
-  font-family: arial, sans-serif;  
-  font-size: 40px;
-  color: #0000ff;
-  }
-  
-  
-  body{
+    background-color: white;
     position: absolute;
     top: 50%;
     left: 30%;
@@ -73,7 +23,7 @@
     width: 0px;
     height: 20px;
     border-radius: 15px;
-    animation: progres 20s infinite linear;    
+    animation: progres 30s infinite linear;    
 }
 @keyframes progres{
     0%{
@@ -121,13 +71,13 @@
 }
 
 
-  
+ $('body').fadeIn(1000); 
   
  /*! Fades in page on load 
  simple fade in and out
 $(document).ready(function(){
 $('body').css('display', 'none');
-$('body').fadeIn(5000);
+$('body').fadeIn(1000);
 $('body').fadeOut(5000);
 })
   
