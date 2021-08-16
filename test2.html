@@ -51,6 +51,51 @@
   font-size: 40px;
   color: #0000ff;
   }
+  
+  
+  body{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
+.progress{
+    position: relative;
+    height: 10px;
+    width: 2110%;
+    border: 10px solid #f4a261;
+    border-radius: 15px;
+}
+.progress .color{
+    position: absolute;
+    background-color: DodgerBlue;
+    width: 0px;
+    height: 10px;
+    border-radius: 15px;
+    animation: progres 20s infinite linear;    
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+}; 
+  
+  
+  
+  
 </style> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
@@ -92,7 +137,16 @@ $('body').fadeOut(5000);
 
 </head>
 <body onload="myFunction()">
-  <div id=msg></div>
+  <div id=msgxxxxxxxxx></div>
+  
+  
+  
+   <div class="progress">
+  <div class="color"></div>
+</div>
+  
+  
+  
 </body>
 </html>
 
