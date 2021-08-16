@@ -62,29 +62,20 @@
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
    
-    if urlParams.has("id") {
-    alert("hasID")
-      const id = urlParams.get('id')
+    const id = urlParams.get('id')
     
-     // as early as possible 
-     // window.location.href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=" + id + "&single=true";
+    // as early as possible 
+    // window.location.href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=" + id + "&single=true";
     
     // now get name
     var fname = urlParams.get('fname')
    
-   if (fname.valueOf() == "null") {
-     fname = "all users";
-   }
+    if (fname.valueOf() == "null") {
+      fname = "all users";
+    }
   
-   document.getElementById("msg").innerHTML = "... accessing data for " + fname;  
-   
-   } else {
-     
-      document.getElementById("msg").innerHTML = "Error: no ID supplied.; 
-     
-          }  
-     
-     
+    document.getElementById("msg").innerHTML = "... accessing data for " + fname;  
+    
  }  
    
  // simple jQuery fade in  
@@ -97,18 +88,11 @@
 
 </head>
 <body onload="myFunction()">
- 
-  
-  
-  
-   <div class="progress">
-  <div class="color"></div>
-</div>
+  <div class="progress">
+    <div class="color"></div>
+  </div>
   <br><br>
-  <div id="msg"></div>
-  
-  
-  
+  <div id="msg"></div> 
 </body>
 </html>
 
