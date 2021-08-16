@@ -68,7 +68,9 @@
    
    // now get name
    fname = urlParams.get('fname')
-  
+  if (fname == "") {
+     fname = "all users empty";
+   }
   
    if (fname == "null") {
      fname = "all users";
