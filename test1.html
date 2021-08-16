@@ -114,11 +114,10 @@
     </div>
     <script type="text/javascript">
    
-    function getScreen(gid) {
+    function getScreen(gid,playername) {
                 
-                window.location.href ='test2.html?id=' + gid + "&fname=Bryan"              
-                
-                //window.location.href ='https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=' + gid + '&single=true'    
+                window.location.href ='test2.html?id=' + gid + "&fname=" + playername;            
+                    
     }
     
     function myFunction() {
@@ -132,50 +131,21 @@
                
                 if ( x == 'Bryan Maddison' ) {
                     if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-                        getScreen(764553715); 
+                        getScreen(764553715,"Bryan"); 
                     } else {
-                        getScreen(1376200182);  
+                        getScreen(1376200182,"Bryan");  
                     }
                 }
-      
-      
-      if ( x == 'test' ) {
-                    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-                         getScreen(764553715); 
-                    } else {
-                         getScreen(764553715); 
-                    } 
-            
-                
-                }
-      
-      
-           
+                 
                 if ( x == 'HCP list' ) {  
-                    getScreen(1036897751);                     
+                    getScreen(1036897751,"all members");                     
                 }   
                          
                 if ( x == 'more' ) {               
                     window.location.href = "menuMain.html";
                 } 
                 
-                  
-           
-                
-                
-                
-                
-                 
     }  
-    
-   
-    
-    
-    
-    
-    
-    
-    
       
     window.onunload = function(){};
                              
