@@ -67,9 +67,15 @@
    // now get name
    const fname = urlParams.get('fname')
    alert("--" + fname + "--")
+  
    if (fname == "null") {
      fname = "all users";
    }
+   
+    if (typeof fname == "undefined") {
+     fname = "all users undefined";
+   }
+   
    
 document.getElementById("msg").innerHTML = "... accessing data for " + fname;  
    
