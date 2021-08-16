@@ -62,8 +62,9 @@
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const id = urlParams.get('id')
-     
- window.location.href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=" + id + "&single=true";
+    
+    // as early as possible 
+    window.location.href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=" + id + "&single=true";
     
    // now get name
    var fname = urlParams.get('fname')
@@ -76,20 +77,11 @@
    
  }  
    
-   
+ // simple jQuery fade in  
  $(document).ready(function(){  
  $('body').css('display', 'none');
  $('body').fadeIn(3000); 
  }) 
- /*! Fades in page on load 
- simple fade in and out
-$(document).ready(function(){
-$('body').css('display', 'none');
-$('body').fadeIn(1000);
-$('body').fadeOut(5000);
-})
-  
- */
  
 </script>
 
