@@ -56,21 +56,10 @@
      
     window.location.href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=" + id + "&single=true";
     
-   var txts = [' ..slow.. ', ' ..please wait.. ', ' ..working.. ',' ..loading.. ',' ..connecting.. ',' ..soon.. ','..accessing data..'];
-    var cols = ['</span><span id=sr>', '</span><span id=sg>', '</span><span id=sb>','</span><span id=lr>', '</span><span id=lg>','</span><span id=lb>','</span><span id=gr>', '</span><span id=gg>','</span><span id=gb>'];
-    var stxt='<span id=sb>'
-    
-    for (let i = 0; i < 100; i++) {
-        var txt = txts[Math.floor(Math.random()*txts.length)];
-        var col = cols[Math.floor(Math.random()*cols.length)];
-        stxt=stxt + col + txt
-    }
-    
-    document.getElementById("msg").innerHTML = stxt + "</span>";
+   // now get name
+   const fname = urlParams.get('fname')
    
-}
-
-
+document.getElementById("msg").innerHTML = "accessing data for " + fname;  
  $('body').fadeIn(1000); 
   
  /*! Fades in page on load 
@@ -94,6 +83,8 @@ $('body').fadeOut(5000);
    <div class="progress">
   <div class="color"></div>
 </div>
+  <br><br>
+  <div id="msg"></div>
   
   
   
