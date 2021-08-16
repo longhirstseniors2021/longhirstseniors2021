@@ -58,9 +58,10 @@
   <link rel="icon" type="image/x-icon" href="flag.png" />
   <script src="jquery-3.6.0.min.js" type="text/javascript">
 </script>
+
 </head>
 
-<body>
+<body >
   <div class="container">
     <div class="atitle">
       Seniors <img src="fallovergolfer.gif" width="70" height="90" /><br />
@@ -107,37 +108,41 @@
       <br />
     </div>
     <script type="text/javascript">
-    
-    function getScreen(gid) {
+   
+    function getScreen(gid,playername) {
                 
-                window.location.href ='https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=' + gid + '&single=true'    
+                window.location.href ='link.html?id=' + gid + "&fname=" + playername;             
+            
     }
     
     function myFunction() {
-                                
-               var x = document.getElementById("mySelect").value;
-               window.location=window.location;
-               document.getElementById("status").innerHTML = "connecting - can be slow at times";         
-               if ( x == 'score entry' ) {               
-                   window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform";
-               }               
+                                 
+                var x = document.getElementById("mySelect").value;
+                window.location=window.location;
+                document.getElementById("status").innerHTML = "connecting - can be slow at times";         
+                if ( x == 'score entry' ) {               
+                    window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform";
+                }               
                
                 if ( x == 'Keith Belshaw' ) {
                     if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-                        getScreen(552321852); 
+                        getScreen(552321852,"Keith"); 
                     } else {
-                        getScreen(595875691);  
-                    }  
+                        getScreen(595875691,"Keith");  
+                    }
                 }
-           
+      
                 if ( x == 'HCP list' ) {  
-                    getScreen(1036897751);                     
+                    getScreen(1036897751,"all members");                     
                 }   
                          
                 if ( x == 'more' ) {               
                     window.location.href = "menuMain.html";
-                }  
+                } 
+                 
     }  
+    
+   
       
     window.onunload = function(){};
                              
@@ -165,4 +170,7 @@
   </div>
 </body>
 </html>
+
+
+
 
