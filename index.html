@@ -1,6 +1,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
- 
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
   <style type="text/css">
 
       body {
@@ -24,12 +25,66 @@
       .asubtitle {
       font-size:12px;
       }
-      #status {
-      font-family: arial, sans-serif;
-      font-size: 20px;
-      color: #ffffff;  
-      }
 
+      .loader {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background: url('1488.png') 50% 50% no-repeat DodgerBlue;
+      }
+         
+      #rulesh {
+        font-size:30px;
+        color: cyan;   
+      }
+      #rules {
+        font-size:20px;
+        color: cyan;   
+      } 
+           
+    .scrollmessage {
+    display: inline-block;
+    white-space: nowrap;
+    animation: floatText 20s infinite linear;
+    padding-left: 100%; /*Initial offset*/
+    }
+    .scrollmessage:hover {
+    animation-play-state: paused;
+    }
+    @keyframes floatText {
+    to {
+    transform: translateX(-100%);
+    }
+    from {color: DeepSkyBlue;}
+            
+        
+    0% {
+  font-size: 25%;
+  margin-left: 0%;
+  width: 100%;
+}
+    
+    
+    40% {
+  font-size: 100%;
+  margin-left: 0%;
+  width: 100%;
+  
+}
+    
+  95% {
+  font-size: 25%;
+  margin-left: 0%;
+  width: 100%;
+}
+      
+    to {color: white;}
+    }
+    
+   
   </style>
   <meta charset="utf-8" />
   <meta name="viewport" content=
@@ -47,17 +102,17 @@
  
   <div class="container">
     <div class="atitle">
-      Seniors <img src="fallovergolfer.gif" width="70" height="90" /><br />
+      Seniors <img src="fallovergolfer.gif" alt="Golfer" width="70" height="90" /><br />
       Winter Golf<br />
+
       <div class="asubtitle">
         (1st November 2021 to 28th March 2022)
       </div>
-    </div>
-    <br />
+    </div><br />
     <br />
     <select id="mySelect" onchange="myFunction();">
       <option disabled="disabled" selected="selected" valuestyle="display:none;">
-        more options ...
+        Select an option here
       </option>
 
       <option value="score entry">
@@ -108,1036 +163,1029 @@
         Legend
       </option>
 
-      <!-- created using script -->     
+       
 
-<!-- // ----Graham Airey---- -->
+//-----Graham Airey-----
 <option value='Graham Airey'>
 Graham Airey
 </option>
 
-<!-- // ----Dale Aitkenhead---- -->
+//-----Dale Aitkenhead-----
 <option value='Dale Aitkenhead'>
 Dale Aitkenhead
 </option>
 
-<!-- // ----Stephen Alldridge---- -->
+//-----Stephen Alldridge-----
 <option value='Stephen Alldridge'>
 Stephen Alldridge
 </option>
 
-<!-- // ----Keith Belshaw---- -->
+//-----Keith Belshaw-----
 <option value='Keith Belshaw'>
 Keith Belshaw
 </option>
 
-<!-- // ----Stewart Brodie---- -->
+//-----Stewart Brodie-----
 <option value='Stewart Brodie'>
 Stewart Brodie
 </option>
 
-<!-- // ----Craig Caesar---- -->
+//-----Craig Caesar-----
 <option value='Craig Caesar'>
 Craig Caesar
 </option>
 
-<!-- // ----Clive Caisley---- -->
+//-----Clive Caisley-----
 <option value='Clive Caisley'>
 Clive Caisley
 </option>
 
-<!-- // ----Dave Cave---- -->
+//-----Dave Cave-----
 <option value='Dave Cave'>
 Dave Cave
 </option>
 
-<!-- // ----Ken Clark---- -->
+//-----Ken Clark-----
 <option value='Ken Clark'>
 Ken Clark
 </option>
 
-<!-- // ----Robert Connelly---- -->
+//-----Robert Connelly-----
 <option value='Robert Connelly'>
 Robert Connelly
 </option>
 
-<!-- // ----Jed Cornhill---- -->
+//-----Jed Cornhill-----
 <option value='Jed Cornhill'>
 Jed Cornhill
 </option>
 
-<!-- // ----Alex Coupland---- -->
+//-----Alex Coupland-----
 <option value='Alex Coupland'>
 Alex Coupland
 </option>
 
-<!-- // ----Michael Courtney---- -->
+//-----Michael Courtney-----
 <option value='Michael Courtney'>
 Michael Courtney
 </option>
 
-<!-- // ----Gary Cowman---- -->
+//-----Gary Cowman-----
 <option value='Gary Cowman'>
 Gary Cowman
 </option>
 
-<!-- // ----Tom Cox---- -->
+//-----Tom Cox-----
 <option value='Tom Cox'>
 Tom Cox
 </option>
 
-<!-- // ----Neil Coxon---- -->
+//-----Neil Coxon-----
 <option value='Neil Coxon'>
 Neil Coxon
 </option>
 
-<!-- // ----Andy Davison---- -->
+//-----Andy Davison-----
 <option value='Andy Davison'>
 Andy Davison
 </option>
 
-<!-- // ----John Dean---- -->
+//-----John Dean-----
 <option value='John Dean'>
 John Dean
 </option>
 
-<!-- // ----Trevor Dodds---- -->
+//-----Trevor Dodds-----
 <option value='Trevor Dodds'>
 Trevor Dodds
 </option>
 
-<!-- // ----Joe Fletcher---- -->
+//-----Joe Fletcher-----
 <option value='Joe Fletcher'>
 Joe Fletcher
 </option>
 
-<!-- // ----Norman Ford---- -->
+//-----Norman Ford-----
 <option value='Norman Ford'>
 Norman Ford
 </option>
 
-<!-- // ----Bill French---- -->
+//-----Bill French-----
 <option value='Bill French'>
 Bill French
 </option>
 
-<!-- // ----Norman Gilholm---- -->
+//-----Norman Gilholm-----
 <option value='Norman Gilholm'>
 Norman Gilholm
 </option>
 
-<!-- // ----David Gilroy---- -->
+//-----David Gilroy-----
 <option value='David Gilroy'>
 David Gilroy
 </option>
 
-<!-- // ----Vince Graham---- -->
+//-----Vince Graham-----
 <option value='Vince Graham'>
 Vince Graham
 </option>
 
-<!-- // ----Chris Green---- -->
+//-----Chris Green-----
 <option value='Chris Green'>
 Chris Green
 </option>
 
-<!-- // ----Rob Green---- -->
+//-----Rob Green-----
 <option value='Rob Green'>
 Rob Green
 </option>
 
-<!-- // ----Richard Hedley---- -->
+//-----Richard Hedley-----
 <option value='Richard Hedley'>
 Richard Hedley
 </option>
 
-<!-- // ----Barry Henderson---- -->
+//-----Barry Henderson-----
 <option value='Barry Henderson'>
 Barry Henderson
 </option>
 
-<!-- // ----Clive Herbert---- -->
+//-----Clive Herbert-----
 <option value='Clive Herbert'>
 Clive Herbert
 </option>
 
-<!-- // ----Colin Hillary---- -->
+//-----Colin Hillary-----
 <option value='Colin Hillary'>
 Colin Hillary
 </option>
 
-<!-- // ----Peter Holleran---- -->
+//-----Peter Holleran-----
 <option value='Peter Holleran'>
 Peter Holleran
 </option>
 
-<!-- // ----Chris Houghton---- -->
+//-----Chris Houghton-----
 <option value='Chris Houghton'>
 Chris Houghton
 </option>
 
-<!-- // ----Ken Houghton---- -->
+//-----Ken Houghton-----
 <option value='Ken Houghton'>
 Ken Houghton
 </option>
 
-<!-- // ----Roger Ireland---- -->
+//-----Roger Ireland-----
 <option value='Roger Ireland'>
 Roger Ireland
 </option>
 
-<!-- // ----Dave Jackson---- -->
-<option value='Dave Jackson'>
-Dave Jackson
-</option>     
-     
-<!-- // ----David.T Jackson---- -->
+//-----David.T Jackson-----
 <option value='David.T Jackson'>
 David.T Jackson
 </option>
 
-<!-- // ----John Jackson---- -->
+//-----John Jackson-----
 <option value='John Jackson'>
 John Jackson
 </option>
 
-<!-- // ----John Langan---- -->
+//-----Dave Jackson-----
+<option value='Dave Jackson'>
+Dave Jackson
+</option>
+
+//-----John Langan-----
 <option value='John Langan'>
 John Langan
 </option>
 
-<!-- // ----Tom Lemin---- -->
+//-----Tom Lemin-----
 <option value='Tom Lemin'>
 Tom Lemin
 </option>
 
-<!-- // ----Jim Little---- -->
+//-----Jim Little-----
 <option value='Jim Little'>
 Jim Little
 </option>
 
-<!-- // ----Bryan Maddison---- -->
+//-----Bryan Maddison-----
 <option value='Bryan Maddison'>
 Bryan Maddison
 </option>
 
-<!-- // ----James Main---- -->
+//-----James Main-----
 <option value='James Main'>
 James Main
 </option>
 
-<!-- // ----Tony Martin---- -->
+//-----Tony Martin-----
 <option value='Tony Martin'>
 Tony Martin
 </option>
 
-<!-- // ----John Matthews---- -->
+//-----John Matthews-----
 <option value='John Matthews'>
 John Matthews
 </option>
 
-<!-- // ----Tony McLure---- -->
+//-----Tony McLure-----
 <option value='Tony McLure'>
 Tony McLure
 </option>
 
-<!-- // ----Tom McNally---- -->
+//-----Tom McNally-----
 <option value='Tom McNally'>
 Tom McNally
 </option>
 
-<!-- // ----Darren Nelson---- -->
+//-----Darren Nelson-----
 <option value='Darren Nelson'>
 Darren Nelson
 </option>
 
-<!-- // ----Danny Norman---- -->
+//-----Danny Norman-----
 <option value='Danny Norman'>
 Danny Norman
 </option>
 
-<!-- // ----Trevor Ord---- -->
+//-----Trevor Ord-----
 <option value='Trevor Ord'>
 Trevor Ord
 </option>
 
-<!-- // ----Dennis Patterson---- -->
+//-----Dennis Patterson-----
 <option value='Dennis Patterson'>
 Dennis Patterson
 </option>
 
-<!-- // ----John Pattison---- -->
+//-----John Pattison-----
 <option value='John Pattison'>
 John Pattison
 </option>
 
-<!-- // ----Duncan Platts---- -->
+//-----Duncan Platts-----
 <option value='Duncan Platts'>
 Duncan Platts
 </option>
 
-<!-- // ----Ray Purdy---- -->
+//-----Ray Purdy-----
 <option value='Ray Purdy'>
 Ray Purdy
 </option>
 
-<!-- // ----Mike Riddell---- -->
+//-----Mike Riddell-----
 <option value='Mike Riddell'>
 Mike Riddell
 </option>
 
-<!-- // ----Martin Rogers---- -->
+//-----Martin Rogers-----
 <option value='Martin Rogers'>
 Martin Rogers
 </option>
 
-<!-- // ----David Scurfield---- -->
+//-----David Scurfield-----
 <option value='David Scurfield'>
 David Scurfield
 </option>
 
-<!-- // ----Brian Simpson---- -->
+//-----Brian Simpson-----
 <option value='Brian Simpson'>
 Brian Simpson
 </option>
 
-<!-- // ----John.E Smith---- -->
+//-----John.E Smith-----
 <option value='John.E Smith'>
 John.E Smith
 </option>
 
-<!-- // ----Tony Smith---- -->
+//-----Tony Smith-----
 <option value='Tony Smith'>
 Tony Smith
 </option>
 
-<!-- // ----Ray Straker---- -->
+//-----Ray Straker-----
 <option value='Ray Straker'>
 Ray Straker
 </option>
 
-<!-- // ----Tom Straker---- -->
+//-----Tom Straker-----
 <option value='Tom Straker'>
 Tom Straker
 </option>
 
-<!-- // ----John Summerbell---- -->
+//-----John Summerbell-----
 <option value='John Summerbell'>
 John Summerbell
 </option>
 
-<!-- // ----Neil Tait---- -->
+//-----Neil Tait-----
 <option value='Neil Tait'>
 Neil Tait
 </option>
 
-<!-- // ----Roly Thompson---- -->
+//-----Roly Thompson-----
 <option value='Roly Thompson'>
 Roly Thompson
 </option>
 
-<!-- // ----Bob Toward---- -->
+//-----Bob Toward-----
 <option value='Bob Toward'>
 Bob Toward
 </option>
 
-<!-- // ----Michael Varnom---- -->
+//-----Michael Varnom-----
 <option value='Michael Varnom'>
 Michael Varnom
 </option>
 
-<!-- // ----Glen Watson---- -->
+//-----Glen Watson-----
 <option value='Glen Watson'>
 Glen Watson
 </option>
 
-<!-- // ----Phil Wegner---- -->
+//-----Phil Wegner-----
 <option value='Phil Wegner'>
 Phil Wegner
 </option>
 
-<!-- // ----Ron Woodcock---- -->
+//-----Ron Woodcock-----
 <option value='Ron Woodcock'>
 Ron Woodcock
 </option>
 
-<!-- // ----Brian Wray---- -->
+//-----Brian Wray-----
 <option value='Brian Wray'>
 Brian Wray
 </option>
 
-<!-- // ----John Wright---- -->
+//-----John Wright-----
 <option value='John Wright'>
 John Wright
 </option>
 
-<!-- // ----Jim Young---- -->
+//-----Jim Young-----
 <option value='Jim Young'>
 Jim Young
 </option>
 
-    </select>
-    <br />
-    <br />
-    <div id="status"></div>
-    <br />
+
+
+    </select><br />
     <br />
     <br />
     <br />
+    <!--
+    <div class="scrollmessage";>
+    <image src="golf-ball.png" width="50" height="50";></image> 
+  latest ... season starts Monday 1st November ...
+  </div>
+  -->
+    <br />
+    <br /> 
     <script type="text/javascript">
-            
-                function getScreen(gid) {
+        
+        
+                function getScreen(gid,playername) {
                 
-                window.location.href ='https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=' + gid + '&single=true'    
+                window.location.href ='link.html?id=' + gid + "&fname=" + playername;             
+            
                 }
+    
             
                function myFunction() {
                                 
                var x = document.getElementById("mySelect").value;
                window.location=window.location;
-               document.getElementById("status").innerHTML = "connecting - can be slow at times"; 
-               // -----google forms pages       
+                       
                if ( x == 'score entry' ) {               
-                 window.location.href ="https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform";            
-               }  
-               // -----local pages             
+                 window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform";            
+               }               
                if ( x == 'rules' ) {               
                  window.location.href ='rules.html';  
                }
-               // -----google sheets pages
                if ( x == 'HCP list' ) {  
-                    getScreen(1036897751);
+                 getScreen(1036897751,"everyone")                
                }  
                if ( x == 'hcp adjustments' ) {
-                    getScreen(107376536);
+               getScreen(107376536,"everyone")
                }
                if ( x == 'lakes hole stats' ) {
-                    getScreen(2090709960);
+               getScreen(2090709960,"everyone")
                }
                if ( x == 'dawson hole stats' ) {
-                    getScreen(1064431565);
+               getScreen(1064431565,"everyone")
                }
                if ( x == 'lakes' ) {
-                    getScreen(1809757953);
+               getScreen(1809757953,"everyone")
                }
                if ( x == 'dawson' ) {
-                    getScreen(910026648);
+               getScreen(910026648,"everyone")
                }
                if ( x == 'twos' ) {
-                    getScreen(1270023006);
+               getScreen(1270023006,'everyone');
                }
                if ( x == 'check CH' ) {
-                    getScreen(1257975779);
+                getScreen(1257975779,'everyone');
                }
                if ( x == 'sorted results' ) {
-                    getScreen(1455933323);
+                getScreen(1455933323,'everyone');
                }
                if ( x == 'latest results' ) {
-                    getScreen(827505463);
+                getScreen(827505463,'everyone');
                }
                if ( x == 'legend' ) {
-                    getScreen(138098929);
-               }
+                getScreen(138098929,'everyone');
+               } 
+   
+// -- users created from script
                
-               //
-               // names - created from script
-               //
-               
-                
 
 //-----Graham Airey-----
 if ( x == 'Graham Airey' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(156897594);
+      getScreen(156897594,'Graham');
     } else {
-      getScreen(754604201);
+      getScreen(754604201,'Graham');
 }}
 
 //-----Dale Aitkenhead-----
 if ( x == 'Dale Aitkenhead' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(165938187);
+      getScreen(165938187,'Dale');
     } else {
-      getScreen(1509555875);
+      getScreen(1509555875,'Dale');
 }}
 
 //-----Stephen Alldridge-----
 if ( x == 'Stephen Alldridge' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1392714940);
+      getScreen(1392714940,'Stephen');
     } else {
-      getScreen(136402569);
+      getScreen(136402569,'Stephen');
 }}
 
 //-----Keith Belshaw-----
 if ( x == 'Keith Belshaw' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(552321852);
+      getScreen(552321852,'Keith');
     } else {
-      getScreen(595875691);
+      getScreen(595875691,'Keith');
 }}
 
 //-----Stewart Brodie-----
 if ( x == 'Stewart Brodie' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(719099678);
+      getScreen(719099678,'Stewart');
     } else {
-      getScreen(1858681860);
+      getScreen(1858681860,'Stewart');
 }}
 
 //-----Craig Caesar-----
 if ( x == 'Craig Caesar' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1979980210);
+      getScreen(1979980210,'Craig');
     } else {
-      getScreen(1292392088);
+      getScreen(1292392088,'Craig');
 }}
 
 //-----Clive Caisley-----
 if ( x == 'Clive Caisley' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(575599066);
+      getScreen(575599066,'Clive');
     } else {
-      getScreen(668705844);
+      getScreen(668705844,'Clive');
 }}
 
 //-----Dave Cave-----
 if ( x == 'Dave Cave' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(13517490);
+      getScreen(13517490,'Dave');
     } else {
-      getScreen(1225505216);
+      getScreen(1225505216,'Dave');
 }}
 
 //-----Ken Clark-----
 if ( x == 'Ken Clark' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1619103930);
+      getScreen(1619103930,'Ken');
     } else {
-      getScreen(63686915);
+      getScreen(63686915,'Ken');
 }}
 
 //-----Robert Connelly-----
 if ( x == 'Robert Connelly' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(238400350);
+      getScreen(238400350,'Robert');
     } else {
-      getScreen(2063925832);
+      getScreen(2063925832,'Robert');
 }}
 
 //-----Jed Cornhill-----
 if ( x == 'Jed Cornhill' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(500720523);
+      getScreen(500720523,'Jed');
     } else {
-      getScreen(1139060609);
+      getScreen(1139060609,'Jed');
 }}
 
 //-----Alex Coupland-----
 if ( x == 'Alex Coupland' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(481828501);
+      getScreen(481828501,'Alex');
     } else {
-      getScreen(1770991226);
+      getScreen(1770991226,'Alex');
 }}
 
 //-----Michael Courtney-----
 if ( x == 'Michael Courtney' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(922909015);
+      getScreen(922909015,'Michael');
     } else {
-      getScreen(1883020167);
+      getScreen(1883020167,'Michael');
 }}
 
 //-----Gary Cowman-----
 if ( x == 'Gary Cowman' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(962389719);
+      getScreen(962389719,'Gary');
     } else {
-      getScreen(52138449);
+      getScreen(52138449,'Gary');
 }}
 
 //-----Tom Cox-----
 if ( x == 'Tom Cox' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(277936891);
+      getScreen(277936891,'Tom');
     } else {
-      getScreen(258573102);
+      getScreen(258573102,'Tom');
 }}
 
 //-----Neil Coxon-----
 if ( x == 'Neil Coxon' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1715234631);
+      getScreen(1715234631,'Neil');
     } else {
-      getScreen(927669307);
+      getScreen(927669307,'Neil');
 }}
 
 //-----Andy Davison-----
 if ( x == 'Andy Davison' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(813242427);
+      getScreen(813242427,'Andy');
     } else {
-      getScreen(1058016022);
+      getScreen(1058016022,'Andy');
 }}
 
 //-----John Dean-----
 if ( x == 'John Dean' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1777600406);
+      getScreen(1777600406,'John');
     } else {
-      getScreen(1716536578);
+      getScreen(1716536578,'John');
 }}
 
 //-----Trevor Dodds-----
 if ( x == 'Trevor Dodds' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1090739168);
+      getScreen(1090739168,'Trevor');
     } else {
-      getScreen(393412315);
+      getScreen(393412315,'Trevor');
 }}
 
 //-----Joe Fletcher-----
 if ( x == 'Joe Fletcher' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1041408689);
+      getScreen(1041408689,'Joe');
     } else {
-      getScreen(1516661828);
+      getScreen(1516661828,'Joe');
 }}
 
 //-----Norman Ford-----
 if ( x == 'Norman Ford' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1767674598);
+      getScreen(1767674598,'Norman');
     } else {
-      getScreen(763072042);
+      getScreen(763072042,'Norman');
 }}
 
 //-----Bill French-----
 if ( x == 'Bill French' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1445987263);
+      getScreen(1445987263,'Bill');
     } else {
-      getScreen(794565869);
+      getScreen(794565869,'Bill');
 }}
 
 //-----Norman Gilholm-----
 if ( x == 'Norman Gilholm' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1629488915);
+      getScreen(1629488915,'Norman');
     } else {
-      getScreen(15342806);
+      getScreen(15342806,'Norman');
 }}
 
 //-----David Gilroy-----
 if ( x == 'David Gilroy' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(582425188);
+      getScreen(582425188,'David');
     } else {
-      getScreen(1489648590);
+      getScreen(1489648590,'David');
 }}
 
 //-----Vince Graham-----
 if ( x == 'Vince Graham' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(579400130);
+      getScreen(579400130,'Vince');
     } else {
-      getScreen(2115681868);
+      getScreen(2115681868,'Vince');
 }}
 
 //-----Chris Green-----
 if ( x == 'Chris Green' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1620137411);
+      getScreen(1620137411,'Chris');
     } else {
-      getScreen(296677356);
+      getScreen(296677356,'Chris');
 }}
 
 //-----Rob Green-----
 if ( x == 'Rob Green' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(2001086312);
+      getScreen(2001086312,'Rob');
     } else {
-      getScreen(1895391147);
+      getScreen(1895391147,'Rob');
 }}
 
 //-----Richard Hedley-----
 if ( x == 'Richard Hedley' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(725554658);
+      getScreen(725554658,'Richard');
     } else {
-      getScreen(1301544687);
+      getScreen(1301544687,'Richard');
 }}
 
 //-----Barry Henderson-----
 if ( x == 'Barry Henderson' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(178297246);
+      getScreen(178297246,'Barry');
     } else {
-      getScreen(1632749992);
+      getScreen(1632749992,'Barry');
 }}
 
 //-----Clive Herbert-----
 if ( x == 'Clive Herbert' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1105955869);
+      getScreen(1105955869,'Clive');
     } else {
-      getScreen(1878764260);
+      getScreen(1878764260,'Clive');
 }}
 
 //-----Colin Hillary-----
 if ( x == 'Colin Hillary' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1536940009);
+      getScreen(1536940009,'Colin');
     } else {
-      getScreen(617713971);
+      getScreen(617713971,'Colin');
 }}
 
 //-----Peter Holleran-----
 if ( x == 'Peter Holleran' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(5152859);
+      getScreen(5152859,'Peter');
     } else {
-      getScreen(1711154082);
+      getScreen(1711154082,'Peter');
 }}
 
 //-----Chris Houghton-----
 if ( x == 'Chris Houghton' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1099424405);
+      getScreen(1099424405,'Chris');
     } else {
-      getScreen(501822339);
+      getScreen(501822339,'Chris');
 }}
 
 //-----Ken Houghton-----
 if ( x == 'Ken Houghton' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(440319872);
+      getScreen(440319872,'Ken');
     } else {
-      getScreen(178924738);
+      getScreen(178924738,'Ken');
 }}
 
 //-----Roger Ireland-----
 if ( x == 'Roger Ireland' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(496926817);
+      getScreen(496926817,'Roger');
     } else {
-      getScreen(905355792);
+      getScreen(905355792,'Roger');
 }}
 
 //-----David.T Jackson-----
 if ( x == 'David.T Jackson' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1804705556);
+      getScreen(1804705556,'David.T');
     } else {
-      getScreen(2092885105);
+      getScreen(2092885105,'David.T');
 }}
 
 //-----John Jackson-----
 if ( x == 'John Jackson' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(154628821);
+      getScreen(154628821,'John');
     } else {
-      getScreen(1092229509);
+      getScreen(1092229509,'John');
 }}
 
 //-----Dave Jackson-----
 if ( x == 'Dave Jackson' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1882911148);
+      getScreen(1882911148,'Dave');
     } else {
-      getScreen(2140095723);
+      getScreen(2140095723,'Dave');
 }}
 
 //-----John Langan-----
 if ( x == 'John Langan' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1217304111);
+      getScreen(1217304111,'John');
     } else {
-      getScreen(714050100);
+      getScreen(714050100,'John');
 }}
 
 //-----Tom Lemin-----
 if ( x == 'Tom Lemin' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1700756964);
+      getScreen(1700756964,'Tom');
     } else {
-      getScreen(1970862421);
+      getScreen(1970862421,'Tom');
 }}
 
 //-----Jim Little-----
 if ( x == 'Jim Little' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(905434958);
+      getScreen(905434958,'Jim');
     } else {
-      getScreen(1008580234);
+      getScreen(1008580234,'Jim');
 }}
 
 //-----Bryan Maddison-----
 if ( x == 'Bryan Maddison' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(764553715);
+      getScreen(764553715,'Bryan');
     } else {
-      getScreen(1376200182);
+      getScreen(1376200182,'Bryan');
 }}
 
 //-----James Main-----
 if ( x == 'James Main' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(152055981);
+      getScreen(152055981,'James');
     } else {
-      getScreen(1823774893);
+      getScreen(1823774893,'James');
 }}
 
 //-----Tony Martin-----
 if ( x == 'Tony Martin' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(907881164);
+      getScreen(907881164,'Tony');
     } else {
-      getScreen(1828081837);
+      getScreen(1828081837,'Tony');
 }}
 
 //-----John Matthews-----
 if ( x == 'John Matthews' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(2118845560);
+      getScreen(2118845560,'John');
     } else {
-      getScreen(1260033790);
+      getScreen(1260033790,'John');
 }}
 
 //-----Tony McLure-----
 if ( x == 'Tony McLure' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1623648063);
+      getScreen(1623648063,'Tony');
     } else {
-      getScreen(162681198);
+      getScreen(162681198,'Tony');
 }}
 
 //-----Tom McNally-----
 if ( x == 'Tom McNally' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1258535021);
+      getScreen(1258535021,'Tom');
     } else {
-      getScreen(90722389);
+      getScreen(90722389,'Tom');
 }}
 
 //-----Darren Nelson-----
 if ( x == 'Darren Nelson' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1355231868);
+      getScreen(1355231868,'Darren');
     } else {
-      getScreen(1212626884);
+      getScreen(1212626884,'Darren');
 }}
 
 //-----Danny Norman-----
 if ( x == 'Danny Norman' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(977511010);
+      getScreen(977511010,'Danny');
     } else {
-      getScreen(1093747366);
+      getScreen(1093747366,'Danny');
 }}
 
 //-----Trevor Ord-----
 if ( x == 'Trevor Ord' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1369079410);
+      getScreen(1369079410,'Trevor');
     } else {
-      getScreen(637559290);
+      getScreen(637559290,'Trevor');
 }}
 
 //-----Dennis Patterson-----
 if ( x == 'Dennis Patterson' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(293134352);
+      getScreen(293134352,'Dennis');
     } else {
-      getScreen(319643249);
+      getScreen(319643249,'Dennis');
 }}
 
 //-----John Pattison-----
 if ( x == 'John Pattison' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(821912725);
+      getScreen(821912725,'John');
     } else {
-      getScreen(206663147);
+      getScreen(206663147,'John');
 }}
 
 //-----Duncan Platts-----
 if ( x == 'Duncan Platts' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(914651746);
+      getScreen(914651746,'Duncan');
     } else {
-      getScreen(2127683859);
+      getScreen(2127683859,'Duncan');
 }}
 
 //-----Ray Purdy-----
 if ( x == 'Ray Purdy' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(110879922);
+      getScreen(110879922,'Ray');
     } else {
-      getScreen(553195217);
+      getScreen(553195217,'Ray');
 }}
 
 //-----Mike Riddell-----
 if ( x == 'Mike Riddell' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(621797901);
+      getScreen(621797901,'Mike');
     } else {
-      getScreen(927845633);
+      getScreen(927845633,'Mike');
 }}
 
 //-----Martin Rogers-----
 if ( x == 'Martin Rogers' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1373818227);
+      getScreen(1373818227,'Martin');
     } else {
-      getScreen(1983437789);
+      getScreen(1983437789,'Martin');
 }}
 
 //-----David Scurfield-----
 if ( x == 'David Scurfield' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1162847051);
+      getScreen(1162847051,'David');
     } else {
-      getScreen(1001185908);
+      getScreen(1001185908,'David');
 }}
 
 //-----Brian Simpson-----
 if ( x == 'Brian Simpson' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1204986242);
+      getScreen(1204986242,'Brian');
     } else {
-      getScreen(508024669);
+      getScreen(508024669,'Brian');
 }}
 
 //-----John.E Smith-----
 if ( x == 'John.E Smith' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(192320516);
+      getScreen(192320516,'John.E');
     } else {
-      getScreen(604017523);
+      getScreen(604017523,'John.E');
 }}
 
 //-----Tony Smith-----
 if ( x == 'Tony Smith' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1933806866);
+      getScreen(1933806866,'Tony');
     } else {
-      getScreen(2046602312);
+      getScreen(2046602312,'Tony');
 }}
 
 //-----Ray Straker-----
 if ( x == 'Ray Straker' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(264071346);
+      getScreen(264071346,'Ray');
     } else {
-      getScreen(1401901982);
+      getScreen(1401901982,'Ray');
 }}
 
 //-----Tom Straker-----
 if ( x == 'Tom Straker' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(257181713);
+      getScreen(257181713,'Tom');
     } else {
-      getScreen(1140997998);
+      getScreen(1140997998,'Tom');
 }}
 
 //-----John Summerbell-----
 if ( x == 'John Summerbell' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1483426099);
+      getScreen(1483426099,'John');
     } else {
-      getScreen(200822097);
+      getScreen(200822097,'John');
 }}
 
 //-----Neil Tait-----
 if ( x == 'Neil Tait' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1304306147);
+      getScreen(1304306147,'Neil');
     } else {
-      getScreen(343267406);
+      getScreen(343267406,'Neil');
 }}
 
 //-----Roly Thompson-----
 if ( x == 'Roly Thompson' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(756093086);
+      getScreen(756093086,'Roly');
     } else {
-      getScreen(442044176);
+      getScreen(442044176,'Roly');
 }}
 
 //-----Bob Toward-----
 if ( x == 'Bob Toward' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(105389378);
+      getScreen(105389378,'Bob');
     } else {
-      getScreen(560942106);
+      getScreen(560942106,'Bob');
 }}
 
 //-----Michael Varnom-----
 if ( x == 'Michael Varnom' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1640157406);
+      getScreen(1640157406,'Michael');
     } else {
-      getScreen(1563807702);
+      getScreen(1563807702,'Michael');
 }}
 
 //-----Glen Watson-----
 if ( x == 'Glen Watson' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(285790374);
+      getScreen(285790374,'Glen');
     } else {
-      getScreen(647778803);
+      getScreen(647778803,'Glen');
 }}
 
 //-----Phil Wegner-----
 if ( x == 'Phil Wegner' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1022160908);
+      getScreen(1022160908,'Phil');
     } else {
-      getScreen(1420819587);
+      getScreen(1420819587,'Phil');
 }}
 
 //-----Ron Woodcock-----
 if ( x == 'Ron Woodcock' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1407819280);
+      getScreen(1407819280,'Ron');
     } else {
-      getScreen(1852224826);
+      getScreen(1852224826,'Ron');
 }}
 
 //-----Brian Wray-----
 if ( x == 'Brian Wray' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(229355317);
+      getScreen(229355317,'Brian');
     } else {
-      getScreen(2143836123);
+      getScreen(2143836123,'Brian');
 }}
 
 //-----John Wright-----
 if ( x == 'John Wright' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(1571644150);
+      getScreen(1571644150,'John');
     } else {
-      getScreen(1764824175);
+      getScreen(1764824175,'John');
 }}
 
 //-----Jim Young-----
 if ( x == 'Jim Young' ) {
    if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen(935006119);
+      getScreen(935006119,'Jim');
     } else {
-      getScreen(985959306);
+      getScreen(985959306,'Jim');
 }}
 
-//----- -----
-if ( x == ' ' ) {
-   if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-      getScreen();
-    } else {
-      getScreen();
-}}
-
-                
-  
                                             
                }  
                              
@@ -1162,7 +1210,11 @@ if ( x == ' ' ) {
                          window.location.reload();
                  }
                 });     
-                                                                                                                
+                                                               
+    		$(window).on('load', function () {
+       		$(".loader").fadeOut("slow");
+    		}); 
+                                                              
     </script>
   </div>
 </body>
