@@ -71,8 +71,14 @@
     var fname = urlParams.get('fname')
    
     if (fname.valueOf() == "null") {
-      fname = "all users";
+      fname = "everyone";
     }
+   
+    if (fname.valueOf() == "all members") {
+      fname = "everyone";
+    }
+   
+   
   
     document.getElementById("msg").innerHTML = "... accessing data for " + fname;  
     
