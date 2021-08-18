@@ -93,6 +93,23 @@
       <option value="more">
         more ...
       </option>
+      
+      <option style="color:Blue;font-size:30px;" value="Enter HCP adjustments">
+      Enter HCP adjustments
+      </option>
+      
+      <option style="color:Blue;font-size:30px;" value="Browse data">
+      Browse data
+      </option>
+      
+      <option style="color:Blue;font-size:30px;" value="Check Course HCP used">
+      Check Course HCP used
+      </option>
+      
+      <option style="color:Blue;font-size:30px;" value="Test closed">
+      Test closed
+      </option>
+      
     </select><br />
     <br />
 
@@ -139,6 +156,36 @@
                 if ( x == 'more' ) {               
                     window.location.href = "menuMain.html";
                 } 
+                
+                
+                // additional admin functions for Tony
+                
+                if ( x == "Enter HCP adjustments" ) {               
+                    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLScla0GWmCK3OwPz32PHqHerTpnhTkXEeM9WJx5opo14FuCDlQ/viewform";
+                }
+                if ( x == "Browse data" ) {               
+                    getScreen(682713647,"all members"); 
+                }
+                if ( x == "Check Course HCP used" ) {               
+                    getScreen(1257975779,"all members"); 
+                }
+                 
+                if (x == "Test closed") { 
+                     
+                    var d = new Date();
+                    var n = d.getHours();
+                    if ( n > 5 ) {
+                     // stop screen  
+                     getScreen(124440609,"all members");  
+                } else {
+                   // put score entry here ..
+                   
+                   getScreen(124440609,"all members");  
+                     
+                   //window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform";
+                }
+                }
+          
                  
     }  
     
