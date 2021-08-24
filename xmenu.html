@@ -1,1 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {   
+   font-family: arial, sans-serif;
+  font-size: 30px; 
+}
+
+.atitle {
+      font-size:60px;
+      }
+.asubtitle {
+      font-size:12px;
+      }
+
+
+
+.dropbtn {
+  background-color: DodgerBlue;
+  color: white;
+  padding: 10px;
+  font-family: arial, sans-serif;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  width: 340px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: SlateGray;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-color: DodgerBlue;
+  font-family: arial, sans-serif;
+  font-size: 30px;
+  color: cyan;
+  padding: 5px 5px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid white;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: DodgerBlue;
+  font-family: arial, sans-serif;
+  font-size: 30px;
+  min-width: 200px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  //padding: 12px 16px;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+  font-size: 30px; 
+}
+
+
+.dropdown a:hover {background-color: #ddd; color: DodgerBlue;}
+
+.show {display: block;}
+
+
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="atitle">
+      Seniors <img src="fallovergolfer.gif" alt="Golfer" width="70" height="90" /><br />
+      Winter Golf<br />
+
+      <div class="asubtitle">
+        (1st November 2021 to 28th March 2022)
+      </div>
+    </div><br />
+    <br />
+    
+    
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Make a selection here</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="type search text here.." id="myInput" onkeyup="filterFunction()">
+ <a href="score entry">
+        Score Entry
+      </a>
+
+      <a href="rules">
+        Rules
+      </a>
+
+      <a href="sorted results">
+        All results
+      </a>
+
+      <a href="HCP list">
+        HCP list
+      </a>
+      
+      <a href="latest results">
+        Latest results
+      </a>
+
+      <a href="dawson hole stats">
+        Dawson hole stats
+      </a>
+
+      <a href="lakes hole stats">
+        Lakes hole stats
+      </a>
+
+      <a href="dawson">
+        Dawson card
+      </a>
+
+      <a href="lakes">
+        Lakes card
+      </a>
+
+      <a href="twos">
+        Twos
+      </a>
+
+      <a href="hcp adjustments">
+        Handicap adjustments
+      </a>
+
+      <a href="legend">
+        Legend
+      </a>
+
+       
+
+
+<a href="#Graham Airey">
+Graham Airey
+</a>
+
+
+<a href="#Dale Aitkenhead">
+Dale Aitkenhead
+</a>
+
+
+<a href="#Stephen Alldridge">
+Stephen Alldridge
+</a>
+
+<!-- - Keith Belshaw -->
+<a href="#Keith Belshaw">
+Keith Belshaw
+</a>
+
+<!-- Stewart Brodie-->
+<a href="#Stewart Brodie">
+Stewart Brodie
+</a>
+
+<!-- Craig Caesar-->
+<a href="#Craig Caesar">
+Craig Caesar
+</a>
+
+<!-- Clive Caisley-->
+<a href="#Clive Caisley">
+Clive Caisley
+</a>
+
+<!-- Dave Cave-->
+<a href="#Dave Cave">
+Dave Cave
+</a>
+
+<!-- Ken Clark-->
+<a href="#Ken Clark">
+Ken Clark
+</a>
+
+<!-- Robert Connelly-->
+<a href="#Robert Connelly">
+Robert Connelly
+</a>
+
+<!-- Jed Cornhill-->
+<a href="#Jed Cornhill">
+Jed Cornhill
+</a>
+
+<!-- Alex Coupland-->
+<a href="#Alex Coupland">
+Alex Coupland
+</a>
+
+<!-- Michael Courtney-->
+<a href="#Michael Courtney">
+Michael Courtney
+</a>
+
+<!-- Gary Cowman-->
+<a href="#Gary Cowman">
+Gary Cowman
+</a>
+
+<!-- Tom Cox-->
+<a href="#Tom Cox">
+Tom Cox
+</a>
+
+<!-- Neil Coxon-->
+<a href="#Neil Coxon">
+Neil Coxon
+</a>
+
+<!-- Andy Davison-->
+<a href="#Andy Davison">
+Andy Davison
+</a>
+
+<!-- John Dean-->
+<a href="#John Dean">
+John Dean
+</a>
+
+<!-- Trevor Dodds-->
+<a href="#Trevor Dodds">
+Trevor Dodds
+</a>
+
+<!-- Joe Fletcher-->
+<a href="#Joe Fletcher">
+Joe Fletcher
+</a>
+
+<!-- Norman Ford-->
+<a href="#Norman Ford">
+Norman Ford
+</a>
+
+<!-- Bill French-->
+<a href="#Bill French">
+Bill French
+</a>
+
+<!-- Norman Gilholm-->
+<a href="#Norman Gilholm">
+Norman Gilholm
+</a>
+
+<!-- David Gilroy-->
+<a href="#David Gilroy">
+David Gilroy
+</a>
+
+<!-- Vince Graham-->
+<a href="#Vince Graham">
+Vince Graham
+</a>
+
+<!-- Chris Green-->
+<a href="#Chris Green">
+Chris Green
+</a>
+
+<!-- Rob Green-->
+<a href="#Rob Green">
+Rob Green
+</a>
+
+<!-- Richard Hedley-->
+<a href="#Richard Hedley">
+Richard Hedley
+</a>
+
+<!-- Barry Henderson-->
+<a href="#Barry Henderson">
+Barry Henderson
+</a>
+
+<!-- Clive Herbert-->
+<a href="#Clive Herbert">
+Clive Herbert
+</a>
+
+<!-- Colin Hillary-->
+<a href="#Colin Hillary">
+Colin Hillary
+</a>
+
+<!-- Peter Holleran-->
+<a href="#Peter Holleran">
+Peter Holleran
+</a>
+
+<!-- Chris Houghton-->
+<a href="#Chris Houghton">
+Chris Houghton
+</a>
+
+<!-- Ken Houghton-->
+<a href="#Ken Houghton">
+Ken Houghton
+</a>
+
+<!-- Roger Ireland-->
+<a href="#Roger Ireland">
+Roger Ireland
+</a>
+
+<!-- David.T Jackson-->
+<a href="#David.T Jackson">
+David.T Jackson
+</a>
+
+<!-- John Jackson-->
+<a href="#John Jackson">
+John Jackson
+</a>
+
+<!-- Dave Jackson-->
+<a href="#Dave Jackson">
+Dave Jackson
+</a>
+
+<!-- John Langan-->
+<a href="#John Langan">
+John Langan
+</a>
+
+<!-- Tom Lemin-->
+<a href="#Tom Lemin">
+Tom Lemin
+</a>
+
+<!-- Jim Little-->
+<a href="#Jim Little">
+Jim Little
+</a>
+
+<!-- Bryan Maddison-->
+<a href="#Bryan Maddison">
+Bryan Maddison
+</a>
+
+<!-- James Main-->
+<a href="#James Main">
+James Main
+</a>
+
+<!-- Tony Martin-->
+<a href="#Tony Martin">
+Tony Martin
+</a>
+
+<!-- John Matthews-->
+<a href="#John Matthews">
+John Matthews
+</a>
+
+<!-- Tony McLure-->
+<a href="#Tony McLure">
+Tony McLure
+</a>
+
+<!-- Tom McNally-->
+<a href="#Tom McNally">
+Tom McNally
+</a>
+
+<!-- Darren Nelson-->
+<a href="#Darren Nelson">
+Darren Nelson
+</a>
+
+<!-- Danny Norman-->
+<a href="#Danny Norman">
+Danny Norman
+</a>
+
+<!-- Trevor Ord-->
+<a href="#Trevor Ord">
+Trevor Ord
+</a>
+
+<!-- Dennis Patterson-->
+<a href="#Dennis Patterson">
+Dennis Patterson
+</a>
+
+<!-- John Pattison-->
+<a href="#John Pattison">
+John Pattison
+</a>
+
+<!-- Duncan Platts-->
+<a href="#Duncan Platts">
+Duncan Platts
+</a>
+
+<!-- Ray Purdy-->
+<a href="#Ray Purdy">
+Ray Purdy
+</a>
+
+<!-- Mike Riddell-->
+<a href="#Mike Riddell">
+Mike Riddell
+</a>
+
+<!-- Martin Rogers-->
+<a href="#Martin Rogers">
+Martin Rogers
+</a>
+
+<!-- David Scurfield-->
+<a href="#David Scurfield">
+David Scurfield
+</a>
+
+<!-- Brian Simpson-->
+<a href="#Brian Simpson">
+Brian Simpson
+</a>
+
+<!-- John.E Smith-->
+<a href="#John.E Smith">
+John.E Smith
+</a>
+
+<!-- Tony Smith-->
+<a href="javascript:getScreen(1933806866,'Tony');">
+Tony Smith
+</a>
+
+<!-- Ray Straker-->
+<a href="#Ray Straker">
+Ray Straker
+</a>
+
+<!-- Tom Straker-->
+<a href="#Tom Straker">
+Tom Straker
+</a>
+
+<!-- John Summerbell-->
+<a href="#John Summerbell">
+John Summerbell
+</a>
+
+<!-- Neil Tait-->
+<a href="#Neil Tait">
+Neil Tait
+</a>
+
+<!-- Roly Thompson-->
+<a href="#Roly Thompson">
+Roly Thompson
+</a>
+
+<!-- Bob Toward-->
+<a href="#Bob Toward">
+Bob Toward
+</a>
+
+<!-- Michael Varnom-->
+<a href="#Michael Varnom">
+Michael Varnom
+</a>
+
+<!-- Glen Watson-->
+<a href="#Glen Watson">
+Glen Watson
+</a>
+
+<!-- Phil Wegner-->
+<a href="#Phil Wegner">
+Phil Wegner
+</a>
+
+<!--  Ron Woodcock -->
+<a href="#Ron Woodcock">
+Ron Woodcock
+</a>
+
+<!-- Brian Wray-->
+<a href="#Brian Wray">
+Brian Wray
+</a>
+
+<!-- John Wright-->
+<a href="#John Wright">
+John Wright
+</a>
+
+<!-- Jim Young-->
+<a href="#Jim Young">
+Jim Young
+</a>
+ 
+ 
+ 
+ 
+ 
+    <a href="#about">About</a>
+    <a href="#base">Base</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+    <a href="#custom">Custom</a>
+    <a href="#support">Support</a>
+    <a href="#tools">Tools</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+
+
+
+
+function getScreen(gid,playername) {
+                
+    window.location.href ='link.html?id=' + gid + "&fname=" + playername;             
+            
+}
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</div>
+</body>
+</html>
 
