@@ -14,9 +14,9 @@
   font-size:12px;
   }   
   .dropbtn {
-  background-color: DodgerBlue;
+  background: DodgerBlue url(updown0.png) 10px 10px no-repeat;
   color: LightGray;
-  width: 300px;
+  width: 370px;
   padding: 10px;
   font-size: 30px;
   border: none;
@@ -34,7 +34,7 @@
   display: none;
   position: absolute;
   background-color: DodgerBlue;
-  min-width: 300px;
+  min-width: 370px;
   overflow: auto;
   z-index: 1;
   }
@@ -78,8 +78,8 @@
 
     <div id="myDropdown1" class="dropdown-content">
       <a href="javascript:window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform'; ">Score entry</a>
-      <a href="javascript:getScreen(1933806866,'Tony');">My info (compact)</a>
-      <a href="javascript:getScreen(2046602312,'Tony');">My info (full)</a>
+      <a href="javascript:getScreen(1933806866,'Tony');">Tony (compact)</a>
+      <a href="javascript:getScreen(2046602312,'Tony');">Tony (full)</a>
       <a href="javascript:getScreen(1036897751,'everyone');">HCP list</a>
       <a href="javascript:getScreen(827505463,'everyone');">latest results</a>
       <a href="javascript:getScreen(1455933323,'everyone');">all results</a>
@@ -409,23 +409,29 @@
       </a>
     </div>
   </div>
-  <br />
+  <br /><br />
   
-  <!-- 4th dropdown for admin options-->
   
+  
+  <!-- 4th dropdown -->
+  <!--
   <div class="dropdown">
     <button onclick="myFunction(this);" class="dropbtn">Admin menu</button>
     <div id="myDropdown4" class="dropdown-content">
-      <a href="javascript:window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLScla0GWmCK3OwPz32PHqHerTpnhTkXEeM9WJx5opo14FuCDlQ/viewform';">HCP adjustments</a>
-      <a href="javascript:getScreen(682713647,'admin');">Browse data (slow)</a>
-      <a href="javascript:getScreen(1257975779,'admin');">Course HCP used</a>
-       <a href="javascript:getScreen(124440609,'admin');">testing CLOSED</a>
+      <a href="javascript:getScreen(1809757953,'everyone');">lakes</a> <a href=
+      "javascript:getScreen(910026648,'everyone');">dawson</a> <a href=
+      "javascript:getScreen(1270023006,'everyone');">twos</a> <a href=
+      "javascript:getScreen(827505463,'everyone');">latest results</a> <a href=
+      "javascript:getScreen(1455933323,'everyone');">all results</a> <a href=
+      "javascript:getScreen(138098929,'everyone');">legend</a>
       <a href="#">
       <img border="0" src="uparrow.png" width=75 height=50 style="float:right"></img> 
       </a>
     </div>
   </div>
-  <br /><br />
+  <br />
+  
+  -->
   
   <script type="text/javascript">
   function getScreen(gid,playername) {
