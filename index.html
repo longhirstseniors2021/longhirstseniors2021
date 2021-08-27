@@ -12,7 +12,7 @@ background: white url(golf.jpg) 10px 10px no-repeat;
 <script>
 
 let theList = 
-["404",
+["404","404","404","404",
  'Graham','Airey',
 'Dale','Aitkenhead',
 'Stephen','Alldridge',
@@ -86,7 +86,7 @@ let theList =
 'Brian','Wray',
 'John','Wright',
 'Jim','Young',
-"404"]
+"404","404","404","404"]
 
 theTxt = ['<span style="color:red; font-size:200%;">','<span style="color:green; font-size:200%;">','<span style="color:blue; font-size:200%;">','<span style="color:red; font-size:300%;">','<span style="color:green; font-size:300%;">','<span style="color:blue; font-size:300%;">']
 
@@ -103,7 +103,7 @@ function randomColorPicker(aTxt){
 
 var resultlist = ""
 
-for (let i = 0; i < 150; i++) {
+for (let i = 0; i < 200; i++) {
     resultlist = resultlist + " " + randomColorPicker(theTxt) + randomWordPicker(theList) + "</span>"
 }
 document.querySelector("span").innerHTML = resultlist
