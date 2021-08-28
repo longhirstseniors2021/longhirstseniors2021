@@ -12,8 +12,7 @@ background: white url(golf.jpg) 10px 10px no-repeat;
 <script>
 
 let theList = 
-["404","404","404","404",
- 'Graham','Airey',
+['Graham','Airey',
 'Dale','Aitkenhead',
 'Stephen','Alldridge',
 'Keith','Belshaw',
@@ -85,8 +84,7 @@ let theList =
 'Ron','Woodcock',
 'Brian','Wray',
 'John','Wright',
-'Jim','Young',
-"404","404","404","404"]
+'Jim','Young']
 
 theTxt = ['<span style="color:red; font-size:200%;">','<span style="color:green; font-size:200%;">','<span style="color:blue; font-size:200%;">','<span style="color:red; font-size:300%;">','<span style="color:green; font-size:300%;">','<span style="color:blue; font-size:300%;">']
 
@@ -103,14 +101,19 @@ function randomColorPicker(aTxt){
 
 var resultlist = ""
 
-for (let i = 0; i < 200; i++) {
+for (let j = 0; j < 5; j++) {
+
+for (let i = 0; i < 50; i++) {
     resultlist = resultlist + " " + randomColorPicker(theTxt) + randomWordPicker(theList) + "</span>"
 }
+resultlist = resultlist + " " + '<span style="color:black; font-size:300%; font-weight: bold;">' + "INCORRECT URL" + "</span>"
+}
+
 document.querySelector("span").innerHTML = resultlist
 
 setTimeout(function(){
    window.location.reload(1);
-}, 5000);
+}, 10000);
 
 </script>
 </body>
