@@ -104,7 +104,7 @@ var resultlist = ""
 
 for (let j = 0; j < 6; j++) {
 
-for (let i = 0; i < 50; i++) {
+for (let i = 0; i < 60; i++) {
     resultlist = resultlist + " " + randomColorPicker(theTxt) + randomWordPicker(theList) + "</span>"
 }
 resultlist = resultlist + " " + '<span style="color:black; font-size:200%; font-weight: bold;">' + "INCORRECT URL" + "</span>"
@@ -114,7 +114,7 @@ document.querySelector("span").innerHTML = resultlist
 
 setTimeout(function(){
    window.location.reload(1);
-}, 10000);
+}, 15000);
 
 </script>
 </body>
