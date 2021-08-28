@@ -87,7 +87,7 @@ let theList =
 'John','Wright',
 'Jim','Young']
 
-theTxt = ['<span style="color:red; font-size:200%;">','<span style="color:green; font-size:200%;">','<span style="color:blue; font-size:200%;">','<span style="color:red; font-size:100%;">','<span style="color:green; font-size:100%;">','<span style="color:blue; font-size:100%;">']
+theTxt = ['<span style="color:red; font-size:150%;">','<span style="color:green; font-size:150%;">','<span style="color:blue; font-size:150%;">','<span style="color:red; font-size:100%;">','<span style="color:green; font-size:100%;">','<span style="color:blue; font-size:100%;">']
 
 function randomWordPicker(aList){
     let theListLength = theList.length / 10
@@ -102,7 +102,7 @@ function randomColorPicker(aTxt){
 
 var resultlist = ""
 
-for (let j = 0; j < 5; j++) {
+for (let j = 0; j = 5; j++) {
 
 for (let i = 0; i < 50; i++) {
     resultlist = resultlist + " " + randomColorPicker(theTxt) + randomWordPicker(theList) + "</span>"
