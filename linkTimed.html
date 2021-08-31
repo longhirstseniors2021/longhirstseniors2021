@@ -89,9 +89,11 @@
         },1000);
         sessionStorage.setItem('testSecond',second);
       
+        /*
         window.onbeforeunload = function(){
             sessionStorage.setItem('testSecond',second);
         };
+        */
      
         window.onunload = function(){
             sessionStorage.setItem('testSecond',second);
