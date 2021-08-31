@@ -84,7 +84,7 @@
         // second=sessionStorage.getItem('testSecond');
         var timer = setInterval(function(){
             second++;
-           //sessionStorage.setItem('testSecond',second);
+           sessionStorage.setItem('testSecond',second);
         },1000);
         sessionStorage.setItem('testSecond',second);
 
@@ -92,13 +92,13 @@
         window.onbeforeunload = function(){
             sessionStorage.setItem('testSecond',second);
         };
-        */
+      
       
         window.onunload = function(){
             sessionStorage.setItem('testSecond',second);
         };
         
-        
+  */        
     };
 
 </script>
