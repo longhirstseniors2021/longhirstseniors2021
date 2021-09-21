@@ -1,51 +1,10 @@
 <html>
 <body>
     
-   <button id="post-btn">I'm a button</button> 
+   <form method="POST" action="https://script.google.com/macros/s/AKfycbzhQEnPMsjsgT-3Yy5PCH0B4KrCpY1o1C2qUv_yi2YxlFyhjMMebcuOEls3-jpPyIUemA/exec">
+	<input type="text" name="id=999"> <!-- You don't have to have this line --> 
+</form>
     
-    <script>
-        
-     
-const button = document.getElementById('post-btn');
-
-button.addEventListener('click', async _ => {
-  try {     
-    const response = await fetch('yourUrl', {
-      method: 'post',
-      body: {
-        // Your body
-        
-        
-        
-{
-    "id": 12,
-    "date_created": "16-11-2020 10:10 PM",
-    "first_name": "Maulin",
-    "shipping": {
-        "address": "123, ABC Avenue",
-        "phone": "123456789"
-    },
-    "billing": {
-        "address": "876, Office Lane",
-        "phone": "123456789",
-        "postcode":651321
-    }
-}
-
-        
-        
-        
-      }
-    });
-    console.log('Completed!', response);
-  } catch(err) {
-    console.error(`Error: ${err}`);
-  }
-});
-
    
-        
- 
-</script>
 </body>
 </html>
