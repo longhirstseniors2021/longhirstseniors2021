@@ -1,9 +1,26 @@
 <html>
 <body>
     <script>
-window.location.href ="https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=861447874&single=true"
+        
+     
+var http = new XMLHttpRequest();
+var url = 'https://script.google.com/macros/s/AKfycbzhQEnPMsjsgT-3Yy5PCH0B4KrCpY1o1C2qUv_yi2YxlFyhjMMebcuOEls3-jpPyIUemA/exec';
+var params = 'orem=ipsum&name=binny';
+http.open('POST', url, true);
 
-window.location.href ="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWgEPXrmTeHqYSetyXQr2fV1hOnQgU-iBJiClb_ZXfpf1rkTW2jrDbtEpoIbJ-Ywozf2kE5SdPVYUe/pubhtml?gid=1823774893&single=true"
+//Send the proper header information along with the request
+//http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+http.onreadystatechange = function() {//Call a function when the state changes.
+    if(http.readyState == 4 && http.status == 200) {
+        alert(http.responseText);
+    }
+}
+http.send(params);
+
+   
+        
+ 
 </script>
 </body>
 </html>
