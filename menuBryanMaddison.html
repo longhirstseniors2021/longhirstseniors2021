@@ -80,6 +80,7 @@ Winter Golf
 <a href="javascript:window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform'; ">Score entry</a>
 <a href="javascript:getScreenFaster(1257733496,'Bryan');">HCP list</a>
 <a href="javascript:getScreenFaster(288104159,'Bryan');">results</a>
+ <a href="javascript:getScreenPlayer(131908568,'Bryan');">player info</a>
 <a href="#" style="background: DodgerBlue">
 <img border="0" src="uparrow.png" width=33 height=33 style="float:right"></img>
 </a>
@@ -433,6 +434,10 @@ window.location.href ='link.html?id=' + gid + "&fname=" + playername;
 function getScreenFaster(gid,playername) {
 window.location.href ='linkfaster.html?id=' + gid + "&fname=" + playername;
 }
+ 
+function getScreenPlayer(gid,playername) {
+window.location.href ='linkfaster.html?id=' + gid + "&fname=" + playername;
+} 
  
 // When the user clicks on the button, closes every dropdown and only opens the one passed as argument
 function myFunction(element) {
