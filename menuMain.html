@@ -1,23 +1,11 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="generator" content=
-"HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
 <style type="text/css">
-
 body {
-background: DodgerBlue;
+background: Gray;
 font-family: arial, sans-serif;
 font-size: 30px;
-color: #ffffff;
-}
-select {
-width: 350px;
-height: 50px;
-position: relative;
-#box-shadow: 1px 1px 1px 1px cyan;
-font-size:30px;
-color: #ffffff;
-background-color: #097BC0
+color: white;
 }
 .atitle {
 font-size:60px;
@@ -25,73 +13,49 @@ font-size:60px;
 .asubtitle {
 font-size:12px;
 }
-
-.loader {
-position: fixed;
-left: 0px;
-top: 0px;
-width: 100%;
-height: 100%;
-z-index: 9999;
-background: url('1488.png') 50% 50% no-repeat DodgerBlue;
+.dropbtn {
+background: DodgerBlue url(downarrow.png) 5px 15px no-repeat;
+color: LightGray;
+width: 400px;
+padding: 10px;
+font-size: 30px;
+border: none;
+cursor: pointer;
 }
-
-#rulesh {
-font-size:30px;
-color: cyan;
+.dropbtn:hover,
+.dropbtn:focus {
+background-color: DodgerBlue; color: white;
 }
-#rules {
-font-size:20px;
-color: cyan;
-}
-
-.scrollmessage {
+.dropdown {
+position: relative;
 display: inline-block;
-white-space: nowrap;
-animation: floatText 20s infinite linear;
-padding-left: 100%; /*Initial offset*/
 }
-.scrollmessage:hover {
-animation-play-state: paused;
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: DodgerBlue;
+min-width: 400px;
+overflow: auto;
+z-index: 1;
 }
-@keyframes floatText {
-to {
-transform: translateX(-100%);
+.dropdown-content a {
+color: LightGray;
+padding: 5px 5px;
+text-decoration: none;
+display: block;
 }
-from {color: DeepSkyBlue;}
-
-
-0% {
-font-size: 25%;
-margin-left: 0%;
-width: 100%;
+.dropdown a:hover {
+background-color: SlateGray; color: white;
 }
-
-
-40% {
-font-size: 100%;
-margin-left: 0%;
-width: 100%;
-
+.show {
+display: block;
 }
-
-95% {
-font-size: 25%;
-margin-left: 0%;
-width: 100%;
-}
-
-to {color: white;}
-}
-
-
 </style>
 <meta charset="utf-8" />
 <meta name="viewport" content=
 "width=device-width, initial-scale=1, shrink-to-fit=yes" />
 <meta name="description" content="Longhirst seniors" />
 <meta name="author" content="Bryan M" />
-
 <title>Longhirst seniors</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
 <script src="jquery-3.6.0.min.js" type="text/javascript">
@@ -99,1129 +63,249 @@ to {color: white;}
 </head>
 
 <body>
-
-<div class="container">
 <div class="atitle">
 Winter <img src="fallovergolfer.gif" alt="Golfer" width="70" height="90" /><br />
-Golf Society<br />
+Golf Society
 
 <div class="asubtitle">
 (Fridays 8th November 2021 to 25th March 2022)
 </div>
-</div><br />
-<br />
-<select id="mySelect" onchange="myFunction();">
-<option disabled="disabled" selected="selected" valuestyle="display:none;">
-Select an option here
-</option>
-<option value="score entry">
-Score Entry
-</option>
-
-<!--
-<option value="xtra results">
-Texas 11th December
-</option>
--->
-
-<option value="rules">
-Rules
-</option>
-
-<option value="sorted results">
-All results
-</option>
-
-<option value="HCP list">
-HCP list
-</option>
-
-<option value="latest results">
-Latest results
-</option>
-
-<option value="dawson hole stats (all)">
-Dawson hole stats (all)
-</option>
-
-<option value="lakes hole stats (all)">
-Lakes hole stats (all)
-</option>
-
-<option value="dawson">
-Dawson card
-</option>
-
-<option value="lakes">
-Lakes card
-</option>
-
-<option value="twos">
-Twos
-</option>
-
-<option value="hcp adjustments">
-Handicap adjustments
-</option>
-
-<option value="legend">
-Legend
-</option>
-
-
-
-//-----Graham Airey-----
-<option value='Graham Airey'>
-Graham Airey
-</option>
-
-//-----Dale Aitkenhead-----
-<option value='Dale Aitkenhead'>
-Dale Aitkenhead
-</option>
-
-//-----Stephen Alldridge-----
-<option value='Stephen Alldridge'>
-Stephen Alldridge
-</option>
-
-//-----Keith Belshaw-----
-<option value='Keith Belshaw'>
-Keith Belshaw
-</option>
-
-//-----Stewart Brodie-----
-<option value='Stewart Brodie'>
-Stewart Brodie
-</option>
-
-//-----Craig Caesar-----
-<option value='Craig Caesar'>
-Craig Caesar
-</option>
-
-//-----Clive Caisley-----
-<option value='Clive Caisley'>
-Clive Caisley
-</option>
-
-//-----Dave Cave-----
-<option value='Dave Cave'>
-Dave Cave
-</option>
-
-//-----Ken Clark-----
-<option value='Ken Clark'>
-Ken Clark
-</option>
-
-//-----Robert Connelly-----
-<option value='Robert Connelly'>
-Robert Connelly
-</option>
-
-Jed Cornhill
-</option>
-
-//-----Alex Coupland-----
-<option value='Alex Coupland'>
-Alex Coupland
-</option>
-
-//-----Michael Courtney-----
-<option value='Michael Courtney'>
-Michael Courtney
-</option>
-
-//-----Gary Cowman-----
-<option value='Gary Cowman'>
-Gary Cowman
-</option>
-
-//-----Tom Cox-----
-<option value='Tom Cox'>
-Tom Cox
-</option>
-
-//-----Neil Coxon-----
-<option value='Neil Coxon'>
-Neil Coxon
-</option>
-
-//-----Andy Davison-----
-<option value='Andy Davison'>
-Andy Davison
-</option>
-
-//-----John Dean-----
-<option value='John Dean'>
-John Dean
-</option>
-
-//-----Trevor Dodds-----
-<option value='Trevor Dodds'>
-Trevor Dodds
-</option>
-
-//-----Joe Fletcher-----
-<option value='Joe Fletcher'>
-Joe Fletcher
-</option>
-
-//---"Norman"ord-----
-<option value"Norman"ord'>
-Norman Ford
-</option>
-
-//-----Bill French-----
-<option value='Bill French'>
-Bill French
-</option>
-
-//---"Norman"ilholm-----
-<option value"Norman"ilholm'>
-Norman Gilholm
-</option>
-
-//---"Norman"ilholm-----
-<option value"Norman"ilholm'>
-Norman Gilholm
-</option>
-
-//-----Vince Graham-----
-<option value='Vince Graham'>
-Vince Graham
-</option>
-
-//-----Chris Green-----
-<option value='Chris Green'>
-Chris Green
-</option>
-
-//-----Rob Green-----
-<option value='Rob Green'>
-Rob Green
-</option>
-
-//-----Richard Hedley-----
-<option value='Richard Hedley'>
-Richard Hedley
-</option>
-
-//-----Barry Henderson-----
-<option value='Barry Henderson'>
-Barry Henderson
-</option>
-
-//-----Clive Herbert-----
-<option value='Clive Herbert'>
-Clive Herbert
-</option>
-
-//-----Colin Hillary-----
-<option value='Colin Hillary'>
-Colin Hillary
-</option>
-
-//-----Peter Holleran-----
-<option value='Peter Holleran'>
-Peter Holleran
-</option>
-
-//-----Chris Houghton-----
-<option value='Chris Houghton'>
-Chris Houghton
-</option>
-
-//-----Ken Houghton-----
-<option value='Ken Houghton'>
-Ken Houghton
-</option>
-
-//-----Roger Ireland-----
-<option value='Roger Ireland'>
-Roger Ireland
-</option>
-
-//-----David.T Jackson-----
-<option value='David.T Jackson'>
-David.T Jackson
-</option>
-
-//-----John Jackson-----
-<option value='John Jackson'>
-John Jackson
-</option>
-
-//-----Dave Jackson-----
-<option value='Dave Jackson'>
-Dave Jackson
-</option>
-
-//-----John Langan-----
-<option value='John Langan'>
-John Langan
-</option>
-
-//-----Tom Lemin-----
-<option value='Tom Lemin'>
-Tom Lemin
-</option>
-
-//-----Jim Little-----
-<option value='Jim Little'>
-Jim Little
-</option>
-
-//-----Bryan Maddison-----
-<option value='Bryan Maddison'>
-Bryan Maddison
-</option>
-
-//-----James Main-----
-<option value='James Main'>
-James Main
-</option>
-
-//-----Tony Martin-----
-<option value='Tony Martin'>
-Tony Martin
-</option>
-
-//-----John Matthews-----
-<option value='John Matthews'>
-John Matthews
-</option>
-
-//-----Tony McLure-----
-<option value='Tony McLure'>
-Tony McLure
-</option>
-
-//-----Tom McNally-----
-<option value='Tom McNally'>
-Tom McNally
-</option>
-
-//-----Darren Nelson-----
-<option value='Darren Nelson'>
-Darren Nelson
-</option>
-
-//-----Dann"Norman"---
-<option value='Dann"Norman"
-Danny Norman
-</option>
-
-//-----Trevor Ord-----
-<option value='Trevor Ord'>
-Trevor Ord
-</option>
-
-//-----Dennis Patterson-----
-<option value='Dennis Patterson'>
-Dennis Patterson
-</option>
-
-//-----John Pattison-----
-<option value='John Pattison'>
-John Pattison
-</option>
-
-//-----Duncan Platts-----
-<option value='Duncan Platts'>
-Duncan Platts
-</option>
-
-//-----Ray Purdy-----
-<option value='Ray Purdy'>
-Ray Purdy
-</option>
-
-//-----Mike Riddell-----
-<option value='Mike Riddell'>
-Mike Riddell
-</option>
-
-//-----Martin Rogers-----
-<option value='Martin Rogers'>
-Martin Rogers
-</option>
-
-//-----David Scurfield-----
-<option value='David Scurfield'>
-David Scurfield
-</option>
-
-//-----Brian Simpson-----
-<option value='Brian Simpson'>
-Brian Simpson
-</option>
-
-//-----John.E Smith-----
-<option value='John.E Smith'>
-John.E Smith
-</option>
-
-//-----Tony Smith-----
-<option value='Tony Smith'>
-Tony Smith
-</option>
-
-//-----Ray Straker-----
-<option value='Ray Straker'>
-Ray Straker
-</option>
-
-//-----Tom Straker-----
-<option value='Tom Straker'>
-Tom Straker
-</option>
-
-//-----John Summerbell-----
-<option value='John Summerbell'>
-John Summerbell
-</option>
-
-//-----Neil Tait-----
-<option value='Neil Tait'>
-Neil Tait
-</option>
-
-//-----Roly Thompson-----
-<option value='Roly Thompson'>
-Roly Thompson
-</option>
-
-//-----Bob Toward-----
-<option value='Bob Toward'>
-Bob Toward
-</option>
-
-//-----Michael Varnom-----
-<option value='Michael Varnom'>
-Michael Varnom
-</option>
-
-//-----Glen Watson-----
-<option value='Glen Watson'>
-Glen Watson
-</option>
-
-//-----Phil Wegner-----
-<option value='Phil Wegner'>
-Phil Wegner
-</option>
-
-//-----Ron Woodcock-----
-<option value='Ron Woodcock'>
-Ron Woodcock
-</option>
-
-//-----Brian Wray-----
-<option value='Brian Wray'>
-Brian Wray
-</option>
-
-//-----John Wright-----
-<option value='John Wright'>
-John Wright
-</option>
-
-//-----Jim Young-----
-<option value='Jim Young'>
-Jim Young
-</option>
-
-
-
-</select><br />
-<br />
-<br />
-<br />
-<!--
-<div class="scrollmessage";>
-<image src="golf-ball.png" width="50" height="50";></image>
-latest ... season starts Monday 1st November ...
 </div>
--->
 <br />
+
+<!-- 1st dropdown -->
+<div class="dropdown">
+<button onclick="myFunction(this);" class="dropbtn">Main menu</button>
+<div id="myDropdown1" class="dropdown-content">
+<a href="javascript:window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform'; ">Score entry</a>
+<a href="javascript:getScreenFaster(1257733496,'Main');">HCP list</a>
+<a href="javascript:getScreenFaster(288104159,'Main');">results</a>
+<a href="javascript:getScreenFaster(633395439,'Main');">twos</a>
+<a href="javascript:window.location.href='rules.html';">rules</a>
+<a href="javascript:getScreenPlayer(238527462,'James');">James my info</a>
+<a href="javascript:getScreenPlayerFull(1537618975,'James');">James my info (full)</a>
+
+<a href="#" style="background: DodgerBlue">
+<img border="0" src="uparrow.png" width=33 height=33 style="float:right"></img>
+</a>
+</div>
+</div>
 <br />
+
+<!-- 2nd dropdown -->
+<div class="dropdown">
+<button onclick="myFunction(this);" class="dropbtn">Players info</button>
+<div id="myDropdown2" class="dropdown-content">
+<a href="javascript:getScreenPlayer(1394470804,'Graham');">Graham Airey</a>
+<a href="javascript:getScreenPlayer(705919124,'Dale');">Dale Aitkenhead</a>
+<a href="javascript:getScreenPlayer(22538704,'Stephen');">Stephen Alldridge</a>
+<a href="javascript:getScreenPlayer(1408868902,'Keith');">Keith Belshaw</a>
+<a href="javascript:getScreenPlayer(1902353837,'Stewart');">Stewart Brodie</a>
+<a href="javascript:getScreenPlayer(1773986802,'Craig');">Craig Caesar</a>
+<a href="javascript:getScreenPlayer(820445655,'Clive');">Clive Caisley</a>
+<a href="javascript:getScreenPlayer(752704893,'Dave');">Dave Cave</a>
+<a href="javascript:getScreenPlayer(719343941,'Ken');">Ken Clark</a>
+<a href="javascript:getScreenPlayer(1910739996,'Robert');">Robert Connelly</a>
+<a href="javascript:getScreenPlayer(1556813579,'Jed');">Jed Cornhill</a>
+<a href="javascript:getScreenPlayer(1724741221,'Alex');">Alex Coupland</a>
+<a href="javascript:getScreenPlayer(1940457509,'Michael');">Michael Courtney</a>
+<a href="javascript:getScreenPlayer(2015489359,'Gary');">Gary Cowman</a>
+<a href="javascript:getScreenPlayer(2051898808,'Tom');">Tom Cox</a>
+<a href="javascript:getScreenPlayer(525466082,'Neil');">Neil Coxon</a>
+<a href="javascript:getScreenPlayer(349132389,'Andy');">Andy Davison</a>
+<a href="javascript:getScreenPlayer(1296154515,'John');">John Dean</a>
+<a href="javascript:getScreenPlayer(1698856879,'Bill');">Bill French</a>
+<a href="javascript:getScreenPlayer(15342806,'Norman';">Norman Gilholm</a>
+<a href="javascript:getScreenPlayer(560056738,'Vince');">Vince Graham</a>
+<a href="javascript:getScreenPlayer(973216981,'Richard');">Richard Hedley</a>
+<a href="javascript:getScreenPlayer(1088254711,'Clive');">Clive Herbert</a>
+<a href="javascript:getScreenPlayer(699345160,'Peter');">Peter Holleran</a>
+<a href="javascript:getScreenPlayer(894418121,'Roger');">Roger Ireland</a>
+<a href="javascript:getScreenPlayer(744089486,'David.T');">David.T Jackson</a>
+<a href="javascript:getScreenPlayer(1060829809,'John');">John Jackson</a>
+<a href="javascript:getScreenPlayer(1599175137,'Trevor');">Trevor Dodds</a>
+<a href="javascript:getScreenPlayer(633634243,'Joe');">Joe Fletcher</a>
+<a href="javascript:getScreenPlayer(146058231,'Norman';">Norman Ford</a>
+<a href="javascript:getScreenPlayer(1671398661,'Chris');">Chris Green</a>
+<a href="javascript:getScreenPlayer(1092148386,'Rob');">Rob Green</a>
+<a href="javascript:getScreenPlayer(1359973574,'Barry');">Barry Henderson</a>
+<a href="javascript:getScreenPlayer(1399120364,'Colin');">Colin Hillary</a>
+<a href="javascript:getScreenPlayer(1841764857,'Chris');">Chris Houghton</a>
+<a href="javascript:getScreenPlayer(478755437,'Ken');">Ken Houghton</a>
+<a href="javascript:getScreenPlayer(133478977,'Dave');">Dave Jackson</a>
+<a href="javascript:getScreenPlayer(2055245958,'John');">John Langan</a>
+<a href="javascript:getScreenPlayer(1532033678,'Tom');">Tom Lemin</a>
+<a href="javascript:getScreenPlayer(1163440447,'Jim');">Jim Little</a>
+<a href="javascript:getScreenPlayer(131908568,'Bryan');">Bryan Maddison</a>
+<a href="javascript:getScreenPlayer(238527462,'James');">James Main</a>
+<a href="javascript:getScreenPlayer(398601094,'John');">John Matthews</a>
+<a href="javascript:getScreenPlayer(998426635,'Tony');">Tony Martin</a>
+<a href="javascript:getScreenPlayer(1897261013,'Tony');">Tony McLure</a>
+<a href="javascript:getScreenPlayer(897857949,'Tom');">Tom McNally</a>
+<a href="javascript:getScreenPlayer(1092823751,'Darren');">Darren Nelson</a>
+<a href="javascript:getScreenPlayer(744633772,'Danny');">Dann"Norman"a>
+<a href="javascript:getScreenPlayer(596481478,'Trevor');">Trevor Ord</a>
+<a href="javascript:getScreenPlayer(1650859843,'Dennis');">Dennis Patterson</a>
+<a href="javascript:getScreenPlayer(338286093,'John');">John Pattison</a>
+<a href="javascript:getScreenPlayer(1232214035,'Mike');">Mike Riddell</a>
+<a href="javascript:getScreenPlayer(582825681,'Martin');">Martin Rogers</a>
+<a href="javascript:getScreenPlayer(577444279,'David');">David Scurfield</a>
+<a href="javascript:getScreenPlayer(317551447,'Brian');">Brian Simpson</a>
+<a href="javascript:getScreenPlayer(635074435,'Ray');">Ray Straker</a>
+<a href="javascript:getScreenPlayer(386540439,'Tom');">Tom Straker</a>
+<a href="javascript:getScreenPlayer(2032237860,'John.E');">John.E Smith</a>
+<a href="javascript:getScreenPlayer(75533274,'Tony');">Tony Smith</a>
+<a href="javascript:getScreenPlayer(1285449097,'John');">John Summerbell</a>
+<a href="javascript:getScreenPlayer(1410005635,'Neil');">Neil Tait</a>
+<a href="javascript:getScreenPlayer(948881714,'Roly');">Roly Thompson</a>
+<a href="javascript:getScreenPlayer(1157876764,'Bob');">Bob Toward</a>
+<a href="javascript:getScreenPlayer(1127073061,'Michael');">Michael Varnom</a>
+<a href="javascript:getScreenPlayer(1254598927,'Glen');">Glen Watson</a>
+<a href="javascript:getScreenPlayer(952605854,'Phil');">Phil Wegner</a>
+<a href="javascript:getScreenPlayer(1083213717,'Ron');">Ron Woodcock</a>
+<a href="javascript:getScreenPlayer(3879095,'Brian');">Brian Wray</a> 
+<a href="javascript:getScreenPlayer(41714878,'John');">John Wright</a>   
+<a href="javascript:getScreenPlayer(195226134,'Jim');">Jim Young</a>
+<a href="#" style="background: DodgerBlue">
+<img border="0" src="uparrow.png" width=33 height=33 style="float:right"></img>
+</a>
+</div>
+</div>
+<br />
+<!-- 3rd dropdown -->
+<div class="dropdown">
+<button onclick="myFunction(this);" class="dropbtn">Players (full)</button>
+<div id="myDropdown3" class="dropdown-content">
+<a href="javascript:getScreenPlayerFull(1555941163,'Graham');">Graham Airey</a>
+<a href="javascript:getScreenPlayerFull(2113124178,'Dale');">Dale Aitkenhead</a>
+<a href="javascript:getScreenPlayerFull(505565494,'Stephen');">Stephen Alldridge</a>
+<a href="javascript:getScreenPlayerFull(357255523,'Keith');">Keith Belshaw</a>
+<a href="javascript:getScreenPlayerFull(274846957,'Stewart');">Stewart Brodie</a>
+<a href="javascript:getScreenPlayerFull(136484828,'Craig');">Craig Caesar</a>
+<a href="javascript:getScreenPlayerFull(562547020,'Clive');">Clive Caisley</a>
+<a href="javascript:getScreenPlayerFull(62835453,'Dave');">Dave Cave</a>
+<a href="javascript:getScreenPlayerFull(890542607,'Ken');">Ken Clark</a>
+<a href="javascript:getScreenPlayerFull(1533206125,'Robert');">Robert Connelly</a>
+<a href="javascript:getScreenPlayerFull(361100112,'Jed');">Jed Cornhill</a>
+<a href="javascript:getScreenPlayerFull(1644193099,'Alex');">Alex Coupland</a>
+<a href="javascript:getScreenPlayerFull(2047262852,'Michael');">Michael Courtney</a>
+<a href="javascript:getScreenPlayerFull(673002680,'Gary');">Gary Cowman</a>
+<a href="javascript:getScreenPlayerFull(2031671726,'Tom');">Tom Cox</a>
+<a href="javascript:getScreenPlayerFull(2028911632,'Neil');">Neil Coxon</a>
+<a href="javascript:getScreenPlayerFull(753999934,'Andy');">Andy Davison</a>
+<a href="javascript:getScreenPlayerFull(1040619535,'John');">John Dean</a>
+<a href="javascript:getScreenPlayerFull(1635809352,'Trevor');">Trevor Dodds</a>
+<a href="javascript:getScreenPlayerFull(1161756862,'Joe');">Joe Fletcher</a>
+<a href="javascript:getScreenPlayerFull(221300119,'Norman');">Norman Ford</a>
+<a href="javascript:getScreenPlayerFull(29945625,'Bill');">Bill French</a>
+<a href="javascript:getScreenPlayerFull(1416879487,'Norman');">Norman Gilholm</a>
+<a href="javascript:getScreenPlayerFull(1667915321,'Vince');">Vince Graham</a>
+<a href="javascript:getScreenPlayerFull(763311294,'Chris');">Chris Green</a>
+<a href="javascript:getScreenPlayerFull(1843087026,'Rob');">Rob Green</a>
+<a href="javascript:getScreenPlayerFull(467862057,'Richard');">Richard Hedley</a>
+<a href="javascript:getScreenPlayerFull(401300686,'Barry');">Barry Henderson</a>
+<a href="javascript:getScreenPlayerFull(1701804823,'Clive');">Clive Herbert</a>
+<a href="javascript:getScreenPlayerFull(1314263907,'Colin');">Colin Hillary</a>
+<a href="javascript:getScreenPlayerFull(1769466985,'Peter');">Peter Holleran</a>
+<a href="javascript:getScreenPlayerFull(1096989694,'Chris');">Chris Houghton</a>
+<a href="javascript:getScreenPlayerFull(297923361,'Ken');">Ken Houghton</a>
+<a href="javascript:getScreenPlayerFull(1367823252,'Roger');">Roger Ireland</a>
+<a href="javascript:getScreenPlayerFull(898961747,'Dave');">Dave Jackson</a>
+<a href="javascript:getScreenPlayerFull(584501735,'David.T');">David.T Jackson</a>
+<a href="javascript:getScreenPlayerFull(454906218,'John');">John Jackson</a>
+<a href="javascript:getScreenPlayerFull(841034327,'John');">John Langan</a>
+<a href="javascript:getScreenPlayerFull(555828190,'Tom');">Tom Lemin</a>
+<a href="javascript:getScreenPlayerFull(2038313691,'Jim');">Jim Little</a>
+<a href="javascript:getScreenPlayerFull(980612912,'Bryan');">Bryan Maddison</a>
+<a href="javascript:getScreenPlayerFull(1537618975,'James');">James Main</a>
+<a href="javascript:getScreenPlayerFull(1230606703,'John');">John Matthews</a>
+<a href="javascript:getScreenPlayerFull(1831369181,'Tony');">Tony Martin</a>
+<a href="javascript:getScreenPlayerFull(18290800,'Tony');">Tony McLure</a>
+<a href="javascript:getScreenPlayerFull(417235683,'Tom');">Tom McNally</a>
+<a href="javascript:getScreenPlayerFull(1614436966,'Darren');">Darren Nelson</a>
+<a href="javascript:getScreenPlayerFull(486197537,'Danny');">Danny Norman</a>
+<a href="javascript:getScreenPlayerFull(1938152793,'Trevor');">Trevor Ord</a>
+<a href="javascript:getScreenPlayerFull(148559787,'Dennis');">Dennis Patterson</a>
+<a href="javascript:getScreenPlayerFull(1665119547,'John');">John Pattison</a>
+<a href="javascript:getScreenPlayerFull(560547554,'Ray');">Ray Purdy</a>
+<a href="javascript:getScreenPlayerFull(363434010,'Mike');">Mike Riddell</a>
+<a href="javascript:getScreenPlayerFull(395900693,'Martin');">Martin Rogers</a>
+<a href="javascript:getScreenPlayerFull(1379211265,'David');">David Scurfield</a>
+<a href="javascript:getScreenPlayerFull(1344665465,'Brian');">Brian Simpson</a>
+<a href="javascript:getScreenPlayerFull(9611700,'John.E');">John.E Smith</a>
+<a href="javascript:getScreenPlayerFull(1147676816,'Tony');">Tony Smith</a>
+<a href="javascript:getScreenPlayerFull(1268617787,'Ray');">Ray Straker</a>
+<a href="javascript:getScreenPlayerFull(1005117978,'Tom');">Tom Straker</a>
+<a href="javascript:getScreenPlayerFull(1591044316,'John');">John Summerbell</a>
+<a href="javascript:getScreenPlayerFull(1699398175,'Neil');">Neil Tait</a>
+<a href="javascript:getScreenPlayerFull(765336519,'Roly');">Roly Thompson</a>
+<a href="javascript:getScreenPlayerFull(46874864,'Bob');">Bob Toward</a>
+<a href="javascript:getScreenPlayerFull(729767292,'Michael');">Michael Varnom</a>
+<a href="javascript:getScreenPlayerFull(45906530,'Glen');">Glen Watson</a>
+<a href="javascript:getScreenPlayerFull(627920977,'Phil');">Phil Wegner</a>
+<a href="javascript:getScreenPlayerFull(1731404715,'Ron');">Ron Woodcock</a>
+<a href="javascript:getScreenPlayerFull(1584678676,'Brian');">Brian Wray</a>
+<a href="javascript:getScreenPlayerFull(995597942,'John');">John Wright</a>
+<a href="javascript:getScreenPlayerFull(118697703,'Jim');">Jim Young</a>
+<a href="#" style="background: DodgerBlue">
+<img border="0" src="uparrow.png" width=33 height=33 style="float:right"></img>
+</a>
+</div>
+</div>
+<br /><br />
+
 <script type="text/javascript">
-
-
 function getScreen(gid,playername) {
-
 window.location.href ='link.html?id=' + gid + "&fname=" + playername;
-
 }
 
-
-function myFunction() {
-
-var x = document.getElementById("mySelect").value;
-window.location=window.location;
-
-if ( x == 'score entry' ) {
-window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfj9pbWik1yqiDC8O3sirPxU4qk_a_V4l0GJlPAdgXyNuo0Rg/viewform";
+function getScreenFaster(gid,playername) {
+window.location.href ='linkfaster.html?id=' + gid + "&fname=" + playername;
 }
-if ( x == 'xtra results' ) {
-getScreen(915923924,"everyone")
+ 
+function getScreenPlayer(gid,playername) {
+window.location.href ='linkplayer.html?id=' + gid + "&fname=" + playername;
+} 
+ 
+function getScreenPlayerFull(gid,playername) {
+window.location.href ='linkplayerFull.html?id=' + gid + "&fname=" + playername;
+}  
+ 
+// When the user clicks on the button, closes every dropdown and only opens the one passed as argument
+function myFunction(element) {
+var dropdowns = document.getElementsByClassName("dropdown-content");
+// element.nextSibling is the carriage return& The dropdown menu is the next next.
+var thisDropdown = element.nextSibling.nextSibling;
+if (!thisDropdown.classList.contains('show')) {  // hide dropdown if clicking on the one already open
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+dropdowns[i].classList.remove('show');
 }
-if ( x == 'rules' ) {
-window.location.href ='rules.html';
-}
-if ( x == 'HCP list' ) {
-getScreen(1036897751,"everyone")
-}
-if ( x == 'hcp adjustments' ) {
-getScreen(107376536,"everyone")
-}
-if ( x == 'lakes hole stats (all)' ) {
-getScreen(2090709960,"everyone")
-}
-if ( x == 'dawson hole stats (all)' ) {
-getScreen(1064431565,"everyone")
-}
-if ( x == 'lakes' ) {
-getScreen(1809757953,"everyone")
-}
-if ( x == 'dawson' ) {
-getScreen(910026648,"everyone")
-}
-if ( x == 'twos' ) {
-getScreen(1270023006,'everyone');
-}
-if ( x == 'check CH' ) {
-getScreen(1257975779,'everyone');
-}
-if ( x == 'sorted results' ) {
-getScreen(1455933323,'everyone');
-}
-if ( x == 'latest results' ) {
-getScreen(827505463,'everyone');
-}
-if ( x == 'legend' ) {
-getScreen(138098929,'everyone');
 }
 
-// -- users created from script
-
-
-//-----Graham Airey-----
-if ( x == 'Graham Airey' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(156897594,'Graham');
-} else {
-getScreen(754604201,'Graham');
-}}
-
-//-----Dale Aitkenhead-----
-if ( x == 'Dale Aitkenhead' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(165938187,'Dale');
-} else {
-getScreen(1509555875,'Dale');
-}}
-
-//-----Stephen Alldridge-----
-if ( x == 'Stephen Alldridge' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1392714940,'Stephen');
-} else {
-getScreen(136402569,'Stephen');
-}}
-
-//-----Keith Belshaw-----
-if ( x == 'Keith Belshaw' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(552321852,'Keith');
-} else {
-getScreen(595875691,'Keith');
-}}
-
-//-----Stewart Brodie-----
-if ( x == 'Stewart Brodie' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(719099678,'Stewart');
-} else {
-getScreen(1858681860,'Stewart');
-}}
-
-//-----Craig Caesar-----
-if ( x == 'Craig Caesar' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1979980210,'Craig');
-} else {
-getScreen(1292392088,'Craig');
-}}
-
-//-----Clive Caisley-----
-if ( x == 'Clive Caisley' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(575599066,'Clive');
-} else {
-getScreen(668705844,'Clive');
-}}
-
-//-----Dave Cave-----
-if ( x == 'Dave Cave' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(13517490,'Dave');
-} else {
-getScreen(1225505216,'Dave');
-}}
-
-//-----Ken Clark-----
-if ( x == 'Ken Clark' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1619103930,'Ken');
-} else {
-getScreen(63686915,'Ken');
-}}
-
-//-----Robert Connelly-----
-if ( x == 'Robert Connelly' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(238400350,'Robert');
-} else {
-getScreen(2063925832,'Robert');
-}}
-
-//-----Jed Cornhill-----
-if ( x == 'Jed Cornhill' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(500720523,'Jed');
-} else {
-getScreen(1139060609,'Jed');
-}}
-
-//-----Alex Coupland-----
-if ( x == 'Alex Coupland' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(481828501,'Alex');
-} else {
-getScreen(1770991226,'Alex');
-}}
-
-//-----Michael Courtney-----
-if ( x == 'Michael Courtney' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(922909015,'Michael');
-} else {
-getScreen(1883020167,'Michael');
-}}
-
-//-----Gary Cowman-----
-if ( x == 'Gary Cowman' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(962389719,'Gary');
-} else {
-getScreen(52138449,'Gary');
-}}
-
-//-----Tom Cox-----
-if ( x == 'Tom Cox' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(277936891,'Tom');
-} else {
-getScreen(258573102,'Tom');
-}}
-
-//-----Neil Coxon-----
-if ( x == 'Neil Coxon' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1715234631,'Neil');
-} else {
-getScreen(927669307,'Neil');
-}}
-
-//-----Andy Davison-----
-if ( x == 'Andy Davison' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(813242427,'Andy');
-} else {
-getScreen(1058016022,'Andy');
-}}
-
-//-----John Dean-----
-if ( x == 'John Dean' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1777600406,'John');
-} else {
-getScreen(1716536578,'John');
-}}
-
-//-----Trevor Dodds-----
-if ( x == 'Trevor Dodds' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1090739168,'Trevor');
-} else {
-getScreen(393412315,'Trevor');
-}}
-
-//-----Joe Fletcher-----
-if ( x == 'Joe Fletcher' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1041408689,'Joe');
-} else {
-getScreen(1516661828,'Joe');
-}}
-
-//---"Norman"ord-----
-if ( x =="Norman"ord' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1767674598"Norman";
-} else {
-getScreen(763072042,"Norman";
-}}
-
-//-----Bill French-----
-if ( x == 'Bill French' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1445987263,'Bill');
-} else {
-getScreen(794565869,'Bill');
-}}
-
-//---"Norman"ilholm-----
-if ( x =="Norman"ilholm' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1629488915"Norman";
-} else {
-getScreen(15342806,"Norman";
-}}
-
-//---"Norman"ilholm-----
-if ( x =="Norman"ilholm' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(582425188,'David');
-} else {
-getScreen(15342806,"Norman";
-}}
-
-//-----Vince Graham-----
-if ( x == 'Vince Graham' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(579400130,'Vince');
-} else {
-getScreen(2115681868,'Vince');
-}}
-
-//-----Chris Green-----
-if ( x == 'Chris Green' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1620137411,'Chris');
-} else {
-getScreen(296677356,'Chris');
-}}
-
-//-----Rob Green-----
-if ( x == 'Rob Green' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(2001086312,'Rob');
-} else {
-getScreen(1895391147,'Rob');
-}}
-
-//-----Richard Hedley-----
-if ( x == 'Richard Hedley' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(725554658,'Richard');
-} else {
-getScreen(1301544687,'Richard');
-}}
-
-//-----Barry Henderson-----
-if ( x == 'Barry Henderson' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(178297246,'Barry');
-} else {
-getScreen(1632749992,'Barry');
-}}
-
-//-----Clive Herbert-----
-if ( x == 'Clive Herbert' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1105955869,'Clive');
-} else {
-getScreen(1878764260,'Clive');
-}}
-
-//-----Colin Hillary-----
-if ( x == 'Colin Hillary' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1536940009,'Colin');
-} else {
-getScreen(617713971,'Colin');
-}}
-
-//-----Peter Holleran-----
-if ( x == 'Peter Holleran' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(5152859,'Peter');
-} else {
-getScreen(1711154082,'Peter');
-}}
-
-//-----Chris Houghton-----
-if ( x == 'Chris Houghton' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1099424405,'Chris');
-} else {
-getScreen(501822339,'Chris');
-}}
-
-//-----Ken Houghton-----
-if ( x == 'Ken Houghton' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(440319872,'Ken');
-} else {
-getScreen(178924738,'Ken');
-}}
-
-//-----Roger Ireland-----
-if ( x == 'Roger Ireland' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(496926817,'Roger');
-} else {
-getScreen(905355792,'Roger');
-}}
-
-//-----David.T Jackson-----
-if ( x == 'David.T Jackson' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1804705556,'David.T');
-} else {
-getScreen(2092885105,'David.T');
-}}
-
-//-----John Jackson-----
-if ( x == 'John Jackson' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(154628821,'John');
-} else {
-getScreen(1092229509,'John');
-}}
-
-//-----Dave Jackson-----
-if ( x == 'Dave Jackson' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1882911148,'Dave');
-} else {
-getScreen(2140095723,'Dave');
-}}
-
-//-----John Langan-----
-if ( x == 'John Langan' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1217304111,'John');
-} else {
-getScreen(714050100,'John');
-}}
-
-//-----Tom Lemin-----
-if ( x == 'Tom Lemin' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1700756964,'Tom');
-} else {
-getScreen(1970862421,'Tom');
-}}
-
-//-----Jim Little-----
-if ( x == 'Jim Little' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(905434958,'Jim');
-} else {
-getScreen(1008580234,'Jim');
-}}
-
-//-----Bryan Maddison-----
-if ( x == 'Bryan Maddison' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(764553715,'Bryan');
-} else {
-getScreen(1376200182,'Bryan');
-}}
-
-//-----James Main-----
-if ( x == 'James Main' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(152055981,'James');
-} else {
-getScreen(1823774893,'James');
-}}
-
-//-----Tony Martin-----
-if ( x == 'Tony Martin' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(907881164,'Tony');
-} else {
-getScreen(1828081837,'Tony');
-}}
-
-//-----John Matthews-----
-if ( x == 'John Matthews' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(2118845560,'John');
-} else {
-getScreen(1260033790,'John');
-}}
-
-//-----Tony McLure-----
-if ( x == 'Tony McLure' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1623648063,'Tony');
-} else {
-getScreen(162681198,'Tony');
-}}
-
-//-----Tom McNally-----
-if ( x == 'Tom McNally' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1258535021,'Tom');
-} else {
-getScreen(90722389,'Tom');
-}}
-
-//-----Darren Nelson-----
-if ( x == 'Darren Nelson' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1355231868,'Darren');
-} else {
-getScreen(1212626884,'Darren');
-}}
-
-//-----Dann"Norman"---
-if ( x == 'Dann"Norman") {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(977511010,'Danny');
-} else {
-getScreen(1093747366,'Danny');
-}}
-
-//-----Trevor Ord-----
-if ( x == 'Trevor Ord' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1369079410,'Trevor');
-} else {
-getScreen(637559290,'Trevor');
-}}
-
-//-----Dennis Patterson-----
-if ( x == 'Dennis Patterson' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(293134352,'Dennis');
-} else {
-getScreen(319643249,'Dennis');
-}}
-
-//-----John Pattison-----
-if ( x == 'John Pattison' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(821912725,'John');
-} else {
-getScreen(206663147,'John');
-}}
-
-//-----Duncan Platts-----
-if ( x == 'Duncan Platts' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(914651746,'Duncan');
-} else {
-getScreen(2127683859,'Duncan');
-}}
-
-//-----Ray Purdy-----
-if ( x == 'Ray Purdy' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(110879922,'Ray');
-} else {
-getScreen(553195217,'Ray');
-}}
-
-//-----Mike Riddell-----
-if ( x == 'Mike Riddell' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(621797901,'Mike');
-} else {
-getScreen(927845633,'Mike');
-}}
-
-//-----Martin Rogers-----
-if ( x == 'Martin Rogers' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1373818227,'Martin');
-} else {
-getScreen(1983437789,'Martin');
-}}
-
-//-----David Scurfield-----
-if ( x == 'David Scurfield' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1162847051,'David');
-} else {
-getScreen(1001185908,'David');
-}}
-
-//-----Brian Simpson-----
-if ( x == 'Brian Simpson' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1204986242,'Brian');
-} else {
-getScreen(508024669,'Brian');
-}}
-
-//-----John.E Smith-----
-if ( x == 'John.E Smith' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(192320516,'John.E');
-} else {
-getScreen(604017523,'John.E');
-}}
-
-//-----Tony Smith-----
-if ( x == 'Tony Smith' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1933806866,'Tony');
-} else {
-getScreen(2046602312,'Tony');
-}}
-
-//-----Ray Straker-----
-if ( x == 'Ray Straker' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(264071346,'Ray');
-} else {
-getScreen(1401901982,'Ray');
-}}
-
-//-----Tom Straker-----
-if ( x == 'Tom Straker' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(257181713,'Tom');
-} else {
-getScreen(1140997998,'Tom');
-}}
-
-//-----John Summerbell-----
-if ( x == 'John Summerbell' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1483426099,'John');
-} else {
-getScreen(200822097,'John');
-}}
-
-//-----Neil Tait-----
-if ( x == 'Neil Tait' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1304306147,'Neil');
-} else {
-getScreen(343267406,'Neil');
-}}
-
-//-----Roly Thompson-----
-if ( x == 'Roly Thompson' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(756093086,'Roly');
-} else {
-getScreen(442044176,'Roly');
-}}
-
-//-----Bob Toward-----
-if ( x == 'Bob Toward' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(105389378,'Bob');
-} else {
-getScreen(560942106,'Bob');
-}}
-
-//-----Michael Varnom-----
-if ( x == 'Michael Varnom' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1640157406,'Michael');
-} else {
-getScreen(1563807702,'Michael');
-}}
-
-//-----Glen Watson-----
-if ( x == 'Glen Watson' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(285790374,'Glen');
-} else {
-getScreen(647778803,'Glen');
-}}
-
-//-----Phil Wegner-----
-if ( x == 'Phil Wegner' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1022160908,'Phil');
-} else {
-getScreen(1420819587,'Phil');
-}}
-
-//-----Ron Woodcock-----
-if ( x == 'Ron Woodcock' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1407819280,'Ron');
-} else {
-getScreen(1852224826,'Ron');
-}}
-
-//-----Brian Wray-----
-if ( x == 'Brian Wray' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(229355317,'Brian');
-} else {
-getScreen(2143836123,'Brian');
-}}
-
-//-----John Wright-----
-if ( x == 'John Wright' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(1571644150,'John');
-} else {
-getScreen(1764824175,'John');
-}}
-
-//-----Jim Young-----
-if ( x == 'Jim Young' ) {
-if (/mobile/i.test(navigator.userAgent) && !/ipad|tablet/i.test(navigator.userAgent)) {
-getScreen(935006119,'Jim');
-} else {
-getScreen(985959306,'Jim');
-}}
-
-
+// Toggle the dropdown on the element clicked
+thisDropdown.classList.toggle("show");
 }
 
-window.onunload = function(){};
-
-if (window.history.state != null && window.history.state.hasOwnProperty('historic')) {
-if (window.history.state.historic == true) {
-document.body.style.display = 'none';
-window.history.replaceState({historic: false}, '');
-window.location.reload();
-} else {
-window.history.replaceState({historic  : true}, '');
-}}
-
-window.addEventListener( "pageshow", function ( event ) {
-var historyTraversal = event.persisted ||
-( typeof window.performance != "undefined" &&
-//              window.performance.navigation.type === 2 ); // deprecated
-performance.getEntriesByType("navigation")[0].type == "back_forward" );
-if ( historyTraversal ) {
-// Handle page restore.
-window.location.reload();
+// close the dropdown when clicked outside
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+var dropdowns = document.getElementsByClassName("dropdown-content");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {
+openDropdown.classList.remove('show');
 }
-});
-
-$(window).on('load', function () {
-$(".loader").fadeOut("slow");
-});
-
+}
+}
+}
 </script>
-</div>
+<a class="weatherwidget-io" href="https://forecast7.com/en/55d20n1d65/longhirst/" data-label_1="LONGHIRST" data-label_2="GOLF" data-font="Arial" data-textcolor="#ffffff" data-highcolor="#ffffff" data-lowcolor="#ffffff" data-suncolor="#ffffff" data-mooncolor="#ffffff" data-cloudcolor="#ffffff" data-cloudfill="#ffffff" data-raincolor="#ffffff" data-snowcolor="#ffffff" ></a>
+<br /><br />
+<br /><br />
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
 </body>
 </html>
